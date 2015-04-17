@@ -1,0 +1,36 @@
+<ion-view view-title="Animales">
+  <ion-content>
+		  <div style="text-align: center" 
+		    
+		    ng-init="animals =[  
+			   				{ namekabyle: 'Tizizwit', namefrancais: 'Abeille',nameanglais: 'Bee' ,image:'Abeille'},
+	                        { namekabyle: 'Izimer', namefrancais: 'Agneau' ,nameanglais: 'Lamb',image:'Agneau'},
+	                        { namekabyle: 'Tizimert', namefrancais: 'Agnelle',nameanglais: 'Ewe lamb' ,image:'Agnelle'},
+	                        { namekabyle: 'Lbaz, igider', namefrancais: 'Aigle',nameanglais: 'Eagle' ,image:'Aigle'},
+	                        { namekabyle: 'Aγyul', namefrancais: 'Âne',nameanglais: 'Donkey' ,image:'Ane'},
+	                        { namekabyle: 'Azger', namefrancais: 'Boeuf',nameanglais: 'Beef' ,image:'Boeuf'},
+	                        { namekabyle: 'Aqelwac', namefrancais: 'Bouc',nameanglais: 'Goat' ,image:'Bouc'},
+	                        { namekabyle: 'Tixsi', namefrancais: 'Brebis',nameanglais: 'Sheep' ,image:'Brebis'},
+	                        { namekabyle: 'Uccen', namefrancais: 'Chacal',nameanglais: 'Jackal' ,image:'Chacal'},
+	                        { namekabyle: 'Alγ°em', namefrancais: 'Chameau',nameanglais: 'Camel' ,image:'Chameau'}                  
+		                   ]">       
+			<div class="list">
+
+				    <div class="item item-thumbnail-left" ng-repeat="animal in animals | filter:q as results">
+				      <img src="images/{{animal.image}}.png" class="thumbnail">
+				      	<div class="name">
+			                     {{animal.namekabyle}}
+			            </div></br>              
+			            <div class="name2">
+			                    {{animal.namefrancais}}
+			            </div></br>  
+			            <div class="name3">
+			                    {{animal.nameanglais}}
+			            </div> 
+				    </div>
+			</div>
+		        
+		</div>
+ </ion-content>
+</ion-view>
+

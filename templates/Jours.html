@@ -1,0 +1,27 @@
+<ion-view view-title="Jours">
+  <ion-content>
+        <div style="text-align: center" ng-init="jours =
+                      [
+                        { namekabyle: 'Letnayen', namefrancais: 'Lundi',nameanglais: 'Monday'},
+                        { namekabyle: 'Ttlata', namefrancais: 'Mardi' ,nameanglais: 'Tuesday'},
+                        { namekabyle: 'laṛebεa ', namefrancais: 'Mercredi',nameanglais: 'Wednesday' },
+                        { namekabyle: 'lexmis', namefrancais: 'Jeudi',nameanglais: 'Thursday' },
+                        { namekabyle: 'lğemεa', namefrancais: 'Vendredi',nameanglais: 'Friday' },
+                        { namekabyle: 'ssebt', namefrancais: 'Samedi',nameanglais: 'Saturday' },
+                        { namekabyle: 'lḥedd', namefrancais: 'Dimanche',nameanglais: 'Sunday' }
+                      ]">               
+            
+            <div class="item item-thumbnail-left" ng-repeat="jour in jours | filter:q as results">
+              
+                  <div class="name">
+                     {{jour.namekabyle}}
+                  </div></br>              
+                  <div class="name2">
+                    {{jour.namefrancais}}
+                  </div></br>  
+                  <div class="name3">
+                    {{jour.nameanglais}}
+                  </div> 
+    </div>
+  </ion-content>
+</ion-view>
