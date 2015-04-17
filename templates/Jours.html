@@ -1,6 +1,9 @@
 <ion-view view-title="Jours">
   <ion-content>
-        <div style="text-align: center" ng-init="jours =
+  <div class="row">
+  <div class="col">
+	  <div class="col">
+	  	<div  ng-init="jours =
                       [
                         { namekabyle: 'Letnayen', namefrancais: 'Lundi',nameanglais: 'Monday'},
                         { namekabyle: 'Ttlata', namefrancais: 'Mardi' ,nameanglais: 'Tuesday'},
@@ -11,8 +14,7 @@
                         { namekabyle: 'lḥedd', namefrancais: 'Dimanche',nameanglais: 'Sunday' }
                       ]">               
             
-            <div class="item item-thumbnail-left" ng-repeat="jour in jours | filter:q as results">
-              
+            <div class="item" ng-repeat="jour in jours | filter:q as results">
                   <div class="name">
                      {{jour.namekabyle}}
                   </div></br>              
@@ -22,6 +24,14 @@
                   <div class="name3">
                     {{jour.nameanglais}}
                   </div> 
-    </div>
+    		</div>
+  		</div>
+
+	</div>
+	<div class="col"></div>
+	<div class="col"></div>
+	<div class="col"></div>
+</div>
+        
   </ion-content>
 </ion-view>

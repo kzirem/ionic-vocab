@@ -1,23 +1,25 @@
-<ion-view view-title="Mois">
+<ion-view view-title="Jours">
   <ion-content>
-        <div style="text-align: center" ng-init="mois =
+  <div class="row">
+  <div class="col">
+	  <div class="col">
+	  	<div  ng-init="mois =
                       [
-						{ namekabyle: 'Yennayer', namefrancais: 'Janvier',nameanglais: 'January'},
-                        { namekabyle: 'Fuṛaṛ', namefrancais: 'Février' ,nameanglais: 'February'},
-                        { namekabyle: 'Maγṛes ', namefrancais: 'Mars',nameanglais: 'March' },
-                        { namekabyle: 'Ibrir', namefrancais: 'Avril',nameanglais: 'April' },
-                        { namekabyle: 'Mayu', namefrancais: 'Mai',nameanglais: 'May' },
-                        { namekabyle: 'yunyu', namefrancais: 'Juin',nameanglais: 'June' },
-                        { namekabyle: 'yulyu', namefrancais: 'Juillet',nameanglais: 'July' },
-                        { namekabyle: 'γuct', namefrancais: 'Août',nameanglais: 'August' },
-                        { namekabyle: 'ctambeṛ', namefrancais: 'Septembre',nameanglais: 'September' },
-                        { namekabyle: 'tubeṛ', namefrancais: 'Octobre',nameanglais: 'October' },
-                        { namekabyle: 'wambeṛ', namefrancais: 'Novembre',nameanglais: 'November' },
-                        { namekabyle: ' jambeṛ, bujambeṛ', namefrancais: 'Décembre',nameanglais: 'December' }
+                        		{ namekabyle: 'Yennayer', namefrancais: 'Janvier',nameanglais: 'January'},
+		                        { namekabyle: 'Fuṛaṛ', namefrancais: 'Février' ,nameanglais: 'February'},
+		                        { namekabyle: 'Maγṛes ', namefrancais: 'Mars',nameanglais: 'March' },
+		                        { namekabyle: 'Ibrir', namefrancais: 'Avril',nameanglais: 'April' },
+		                        { namekabyle: 'Mayu', namefrancais: 'Mai',nameanglais: 'May' },
+		                        { namekabyle: 'yunyu', namefrancais: 'Juin',nameanglais: 'June' },
+		                        { namekabyle: 'yulyu', namefrancais: 'Juillet',nameanglais: 'July' },
+		                        { namekabyle: 'γuct', namefrancais: 'Août',nameanglais: 'August' },
+		                        { namekabyle: 'ctambeṛ', namefrancais: 'Septembre',nameanglais: 'September' },
+		                        { namekabyle: 'tubeṛ', namefrancais: 'Octobre',nameanglais: 'October' },
+		                        { namekabyle: 'wambeṛ', namefrancais: 'Novembre',nameanglais: 'November' },
+		                        { namekabyle: ' jambeṛ, bujambeṛ', namefrancais: 'Décembre',nameanglais: 'December' }
                       ]">               
             
-            <div class="item item-thumbnail-left" ng-repeat="moi in mois | filter:q as results">
-              
+            <div class="item" ng-repeat="moi in mois | filter:q as results">
                   <div class="name">
                      {{moi.namekabyle}}
                   </div></br>              
@@ -27,10 +29,14 @@
                   <div class="name3">
                     {{moi.nameanglais}}
                   </div> 
-    </div>
+    		</div>
+  		</div>
+
+	</div>
+	<div class="col"></div>
+	<div class="col"></div>
+	<div class="col"></div>
+</div>
+        
   </ion-content>
 </ion-view>
-<div class="bar bar-footer bar-balanced">
-  <div class="title">Footer</div>
-</div>
-
