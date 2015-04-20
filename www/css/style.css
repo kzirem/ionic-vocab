@@ -51,5 +51,20 @@
   color: white;
 }
 
+table {
+  font-family: verdana,arial,sans-serif;
+  font-weight: bold;
+  font-size:14px;
+  color:#333333;
+  border-width: 2px;
+  border-color: #999999;
+  border-collapse: collapse;
+}
+table td {
+  border-width: 2px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #999999;
+}
 
 
