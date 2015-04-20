@@ -56,6 +56,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
+  
     .state('app.Legumes', {
       url: "/Legumes",
       views: {
@@ -64,11 +65,35 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-    .state('app.Animales', {
-      url: "/Animales",
+    .state('app.Alphabets', {
+      url: "/Alphabets",
       views: {
         'menuContent': {
-          templateUrl: "templates/Animales.html"
+          templateUrl: "templates/Alphabets.html"
+        }
+      }
+    })
+    .state('app.Saisons', {
+      url: "/Saisons",
+      views: {
+        'menuContent': {
+          templateUrl: "templates/Saisons.html"
+        }
+      }
+    })
+    .state('app.Couleurs', {
+      url: "/Couleurs",
+      views: {
+        'menuContent': {
+          templateUrl: "templates/Couleurs.html"
+        }
+      }
+    })
+    .state('app.Animaux', {
+      url: "/Animaux",
+      views: {
+        'menuContent': {
+          templateUrl: "templates/Animaux.html"
         }
       }
     });

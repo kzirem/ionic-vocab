@@ -1,17 +1,23 @@
 <ion-view view-title="Légumes">
   <ion-content>
 
-		  <div style="text-align: center" 
+  <div class="list list-inset">
+		<label class="item item-input">
+			    <i class="icon ion-search placeholder-icon"></i>
+			    <input type="text" placeholder="Rechercher" ng-model="q">
+			  </label>
+		 </div>
+		 <div style="text-align: center" 
 		    
 		    ng-init="Legumes =[                    
 					                        { namekabyle: 'Tiskert', namefrancais: 'Ail',nameanglais: 'Garlic',image:'Ail' },
 					                        { namekabyle: ' Tifeγwett, Tifeγwa', namefrancais: 'Artichaut' ,nameanglais: 'Artichoke',image:'Artichaut'},
-					                        { namekabyle: ' Iskerci', namefrancais: 'Asperge' ,nameanglais: 'Asparagus',image:'Asperge'},
-					                        { namekabyle: ' Lehbeq', namefrancais: 'Basilic' ,nameanglais: 'Basil',image:'Basilic'},
+					                        { namekabyle: ' Iskerci,iskimen', namefrancais: 'Asperge' ,nameanglais: 'Asparagus',image:'Asperge'},
+					                        { namekabyle: ' leḥbeq', namefrancais: 'Basilic' ,nameanglais: 'Basil',image:'Basilic'},
 					                        { namekabyle: ' Taga', namefrancais: 'Cardon' ,nameanglais: 'Cardoons ',image:'Cardon'},
-		                					{ namekabyle: ' Zarudiya, zrudiya', namefrancais: 'Carotte' ,nameanglais: 'Carrot',image:'Carotte'},
+		                					{ namekabyle: ' zaṛudiya, zṛudiya', namefrancais: 'Carotte' ,nameanglais: 'Carrot',image:'Carotte'},
 		            						{ namekabyle: ' Taγeddiwt', namefrancais: 'Carde' ,nameanglais: 'Card',image:'Carde'},               
-		            						{ namekabyle: ' Lekrafez', namefrancais: 'Céleri' ,nameanglais: 'Celery',image:'Celeri'}, 
+		            						{ namekabyle: ' Lekṛafeẓ', namefrancais: 'Céleri' ,nameanglais: 'Celery',image:'Celeri'}, 
 		            						{ namekabyle: ' Ciflor', namefrancais: 'Chou-fleur' ,nameanglais: 'Cauliflower',image:'Chou-fleur'},
 		            						{ namekabyle: ' Taxyaṛt', namefrancais: 'Concombre' ,nameanglais: 'Cucumber',image:'Concombre'},
 		            						{ namekabyle: ' Tafqlujt', namefrancais: 'Courge' ,nameanglais: 'Artichoke',image:'Courge'},
@@ -25,14 +31,14 @@
 		            						{ namekabyle: ' Libṣelt, lebṣel', namefrancais: 'Oignon' ,nameanglais: 'Onion',image:'Oignon'},
 		                        			{ namekabyle: ' Asemmum', namefrancais: 'Oseille' ,nameanglais: 'Sorrel',image:'Oseille'},
 		                					{ namekabyle: ' Lemεednus', namefrancais: 'Persil' ,nameanglais: 'Parsley',image:'Persil'},
-		            						{ namekabyle: ' Ifelfel aqerhan', namefrancais: 'Piment' ,nameanglais: 'Pimento',image:'Piment'},
+		            						{ namekabyle: ' Ifelfel aqerḥan', namefrancais: 'Piment' ,nameanglais: 'Pimento',image:'Piment'},
 		            						{ namekabyle: ' Tajilban', namefrancais: 'Pois' ,nameanglais: 'Peas',image:'Pois'}, 
-		            						{ namekabyle: ' Lhemmez', namefrancais: 'Pois chiche' ,nameanglais: 'Chickpea',image:'Pois-chiche'},
+		            						{ namekabyle: ' lḥemmeẓ', namefrancais: 'Pois chiche' ,nameanglais: 'Chickpea',image:'Pois-chiche'},
 		            						{ namekabyle: ' Ifelfel', namefrancais: 'Poivron' ,nameanglais: 'Peppers',image:'Poivron'},
 		            						{ namekabyle: ' Lbaṭṭaṭa', namefrancais: 'Pomme de terre' ,nameanglais: 'Potato',image:'Pomme-de-terre'},
 		            						{ namekabyle: ' Tifejla', namefrancais: 'Radis' ,nameanglais: 'Radishes',image:'Radis'},
 		            						{ namekabyle: ' Zzeεteṛ', namefrancais: 'Thym' ,nameanglais: 'Thyme',image:'thyme'},
-		            						{ namekabyle: ' tumatic', namefrancais: 'Tomate' ,nameanglais: 'Tomato',image:'Tomate'}
+		            						{ namekabyle: ' ṭumaṭic', namefrancais: 'Tomate' ,nameanglais: 'Tomato',image:'Tomate'}
 		                      ]">       
 		            <!-- <ons-list>
 		            <ons-list-item  class="list-item-container" ng-repeat="Legume in Legumes | filter:q as results">
@@ -66,5 +72,6 @@
 		        
 		</div>
  </ion-content>
+ 
 </ion-view>
 

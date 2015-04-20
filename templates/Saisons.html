@@ -1,0 +1,33 @@
+<ion-view view-title="Jours">
+  <ion-content>
+  <div class="row">
+  <div class="col">
+	  <div class="col">
+	  	<div  ng-init="jours =
+                      [
+                        { namekabyle: 'Ccetwa', namefrancais: 'Hiver',nameanglais: 'Winter'},
+                        { namekabyle: 'Tafsut, eṛṛbiε', namefrancais: 'Printemps' ,nameanglais: 'Spring'},
+                        { namekabyle: 'Anebdu, ṣṣif ', namefrancais: 'Été',nameanglais: 'Autumn , Fall' },
+                        { namekabyle: 'Lexṛif', namefrancais: 'Automne',nameanglais: 'Summer' }
+                      ]"> 
+            <div class="item" ng-repeat="jour in jours | filter:q as results">
+                  <div class="name">
+                     {{jour.namekabyle}}
+                  </div></br>              
+                  <div class="name2">
+                    {{jour.namefrancais}}
+                  </div></br>  
+                  <div class="name3">
+                    {{jour.nameanglais}}
+                  </div> 
+    		</div>
+  		</div>
+
+	</div>
+	<div class="col"></div>
+	<div class="col"></div>
+	<div class="col"></div>
+</div>
+        
+  </ion-content>
+</ion-view>
