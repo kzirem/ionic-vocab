@@ -1,0 +1,23 @@
+<ion-view view-title="Dictionnaire">
+  <ion-content>
+  <div class="row">
+  <div class="col">
+    <div class="col">
+
+        <div class="item" ng-repeat="dic in dics | filter:q as results">
+                  <div class="name">
+                     {{dic.kb}}
+                  </div></br>              
+                  <div class="name2">
+                    {{dic.fr}}
+                  </div></br>  
+        </div>
+
+  </div>
+  <div class="col"></div>
+  <div class="col"></div>
+  <div class="col"></div>
+</div>
+        
+  </ion-content>
+</ion-view>

@@ -89,6 +89,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+    .state('app.Dictionnaire', {
+      url: "/Dictionnaire",
+      views: {
+        'menuContent': {
+          templateUrl: "templates/Dictionnaire.html"
+        }
+      }
+    })
     .state('app.Animaux', {
       url: "/Animaux",
       views: {
