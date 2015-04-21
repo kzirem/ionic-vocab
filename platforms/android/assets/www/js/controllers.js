@@ -31,18 +31,19 @@ angular.module('starter.controllers', [])
       $scope.closeLogin();
     }, 1000);
   };
-})
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
-})
+  window.onload = function() { playStream(); };
+    // Code from http://www.joeldare.com/wiki/play_an_mp3_audio_stream_in_phonegap
+    function playStream() {
+      try {
+        var myaudio = new Audio('http://icecast.ksl.com:8000/');
+        myaudio.id = 'playerMyAdio';
+        myaudio.play();
+      } catch (e) {
+        alert('no audio support!');
+      }
+    };
+  /// alphaber accordion
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
 });
+

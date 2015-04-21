@@ -1,0 +1,77 @@
+<ion-view view-title="Légumes">
+  <ion-content>
+
+  <div class="list list-inset">
+		<label class="item item-input">
+			    <i class="icon ion-search placeholder-icon"></i>
+			    <input type="text" placeholder="Rechercher" ng-model="q">
+			  </label>
+		 </div>
+		 <div style="text-align: center" 
+		    
+		    ng-init="Legumes =[                    
+					                        { namekabyle: 'Tiskert', namefrancais: 'Ail',nameanglais: 'Garlic',image:'Ail' },
+					                        { namekabyle: ' Tifeγwett, Tifeγwa', namefrancais: 'Artichaut' ,nameanglais: 'Artichoke',image:'Artichaut'},
+					                        { namekabyle: ' Iskerci,iskimen', namefrancais: 'Asperge' ,nameanglais: 'Asparagus',image:'Asperge'},
+					                        { namekabyle: ' leḥbeq', namefrancais: 'Basilic' ,nameanglais: 'Basil',image:'Basilic'},
+					                        { namekabyle: ' Taga', namefrancais: 'Cardon' ,nameanglais: 'Cardoons ',image:'Cardon'},
+		                					{ namekabyle: ' zaṛudiya, zṛudiya', namefrancais: 'Carotte' ,nameanglais: 'Carrot',image:'Carotte'},
+		            						{ namekabyle: ' Taγeddiwt', namefrancais: 'Carde' ,nameanglais: 'Card',image:'Carde'},               
+		            						{ namekabyle: ' Lekṛafeẓ', namefrancais: 'Céleri' ,nameanglais: 'Celery',image:'Celeri'}, 
+		            						{ namekabyle: ' Ciflor', namefrancais: 'Chou-fleur' ,nameanglais: 'Cauliflower',image:'Chou-fleur'},
+		            						{ namekabyle: ' Taxyaṛt', namefrancais: 'Concombre' ,nameanglais: 'Cucumber',image:'Concombre'},
+		            						{ namekabyle: ' Tafqlujt', namefrancais: 'Courge' ,nameanglais: 'Artichoke',image:'Courge'},
+		            						{ namekabyle: ' Takurjit', namefrancais: 'Courgette' ,nameanglais: 'Zucchini',image:'Courgette'},
+		            						{ namekabyle: ' Abesbas', namefrancais: 'Fenouil' ,nameanglais: 'fennel',image:'Fenouil'},
+		            						{ namekabyle: ' Ibiw, ibawen', namefrancais: 'Fève' ,nameanglais: 'Bean',image:'Feve'},
+		            						{ namekabyle: ' Lεett', namefrancais: 'Lentille' ,nameanglais: 'Lentil',image:'Lentille'},
+		            						{ namekabyle: ' Llubya', namefrancais: 'Haricot' ,nameanglais: 'Broad bean',image:'Haricot'},
+		            						{ namekabyle: ' Abettix, afeqqus', namefrancais: 'Melon' ,nameanglais: 'Melon',image:'Melon'},
+		            						{ namekabyle: ' Lleft', namefrancais: 'Navet' ,nameanglais: 'Turnip',image:'Navet'}, 
+		            						{ namekabyle: ' Libṣelt, lebṣel', namefrancais: 'Oignon' ,nameanglais: 'Onion',image:'Oignon'},
+		                        			{ namekabyle: ' Asemmum', namefrancais: 'Oseille' ,nameanglais: 'Sorrel',image:'Oseille'},
+		                					{ namekabyle: ' Lemεednus', namefrancais: 'Persil' ,nameanglais: 'Parsley',image:'Persil'},
+		            						{ namekabyle: ' Ifelfel aqerḥan', namefrancais: 'Piment' ,nameanglais: 'Pimento',image:'Piment'},
+		            						{ namekabyle: ' Tajilban', namefrancais: 'Pois' ,nameanglais: 'Peas',image:'Pois'}, 
+		            						{ namekabyle: ' lḥemmeẓ', namefrancais: 'Pois chiche' ,nameanglais: 'Chickpea',image:'Pois-chiche'},
+		            						{ namekabyle: ' Ifelfel', namefrancais: 'Poivron' ,nameanglais: 'Peppers',image:'Poivron'},
+		            						{ namekabyle: ' Lbaṭṭaṭa', namefrancais: 'Pomme de terre' ,nameanglais: 'Potato',image:'Pomme-de-terre'},
+		            						{ namekabyle: ' Tifejla', namefrancais: 'Radis' ,nameanglais: 'Radishes',image:'Radis'},
+		            						{ namekabyle: ' Zzeεteṛ', namefrancais: 'Thym' ,nameanglais: 'Thyme',image:'thyme'},
+		            						{ namekabyle: ' ṭumaṭic', namefrancais: 'Tomate' ,nameanglais: 'Tomato',image:'Tomate'}
+		                      ]">       
+		            <!-- <ons-list>
+		            <ons-list-item  class="list-item-container" ng-repeat="Legume in Legumes | filter:q as results">
+		              <ons-row>
+		                <ons-col width="30%">
+		                  <img src="images/{{Legume.image}}.png" class="thumbnail">
+		                </ons-col>
+		                <ons-col>
+		                  
+		                </ons-col>
+		               
+		              </ons-row>
+		            </ons-list-item>
+		         </ons-list> -->
+
+			<div class="list">
+
+				    <div class="item item-thumbnail-left" ng-repeat="Legume in Legumes | filter:q as results">
+				      <img src="images/{{Legume.image}}.png" class="thumbnail">
+				      	<div class="name">
+			                     {{Legume.namekabyle}}
+			            </div></br>              
+			            <div class="name2">
+			                    {{Legume.namefrancais}}
+			            </div></br>  
+			            <div class="name3">
+			                    {{Legume.nameanglais}}
+			            </div> 
+				    </div>
+			</div>
+		        
+		</div>
+ </ion-content>
+ 
+</ion-view>
+
