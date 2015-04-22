@@ -45,7 +45,7 @@ angular.module('starter.controllers', [])
     };
   /// alphaber accordion
 
-  $scope.dics = [
+  $scope.words = [
 {"kb":"a","fr":"dag"},
 {"kb":"à","fr":"ar"},
 {"kb":"a-tantôt","fr":"ar-ticki"},
