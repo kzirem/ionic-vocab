@@ -1,90 +1,123 @@
 <ion-view view-title="Dictionnaire">
-  <ion-content>
-    <div class="row">
-      <div class="col">
-        <ion-list>
-            <ion-item ng-repeat="word in words">
-               <p>{{word.kb}}:{{word.fr}} </p>
-            </ion-item>
-        </ion-list>
+  <ion-content ng-controller="DicoCtrl">
+      <div class="list list-inset">
+              <label class="item item-input">
+              <i class="icon ion-search placeholder-icon"></i>
+              <input type="text" placeholder="Rechercher" ng-model="q" >
+            </label>
       </div>
-     
-     
-      <div class="col">
-      <ion-scroll  direction="x" class="wide-as-needed">
-          <button class="button button-small button-assertive">
-            Small Button
+      </br>
+      <ion-scroll  direction="x" class="wide-as-needed" zooming="true">
+          <button class="button button-small button-assertive" ng-click="ShowA()">
+            A
+          </button>
+           <button class="button button-small button-assertive" ng-click="ShowB()">
+            B
           </button>
            <button class="button button-small button-assertive">
-            Small Button
+            C
           </button>
            <button class="button button-small button-assertive">
-            Small Button
+            D
           </button>
            <button class="button button-small button-assertive">
-            Small Button
+            E
           </button>
            <button class="button button-small button-assertive">
-            Small Button
+            F
           </button>
            <button class="button button-small button-assertive">
-            Small Button
+            G
           </button>
            <button class="button button-small button-assertive">
-            Small Button
+            H
           </button>
            <button class="button button-small button-assertive">
-            Small Button
+            I
           </button>
            <button class="button button-small button-assertive">
-            Small Button
+            J
           </button>
            <button class="button button-small button-assertive">
-            Small Button
+            K
           </button>
            <button class="button button-small button-assertive">
-            Small Button
+            L
           </button>
            <button class="button button-small button-assertive">
-            Small Button
+            M
           </button>
            <button class="button button-small button-assertive">
-            Small Button
+            N
           </button>
            <button class="button button-small button-assertive">
-            Small Button
-          </button>
-           <button class="button button-small button-assertive">
-            Small Button
+            O
           </button>
           <button class="button button-small button-assertive">
-            Small Button
+            P
           </button>
            <button class="button button-small button-assertive">
-            Small Button
+            Q
           </button>
            <button class="button button-small button-assertive">
-            Small Button
+            R
           </button>
            <button class="button button-small button-assertive">
-            Small Button
+            S
           </button>
            <button class="button button-small button-assertive">
-            Small Button
+            T
           </button>
            <button class="button button-small button-assertive">
-            Small Button
+            U
           </button>       
            <button class="button button-small button-assertive">
-            Small Button
-          </button>
+            V
+          </button> 
+          <button class="button button-small button-assertive">
+            W
+          </button> 
+          <button class="button button-small button-assertive">
+            X
+          </button> 
+          <button class="button button-small button-assertive">
+            Y
+          </button> 
+          <button class="button button-small button-assertive">
+            Z
+          </button> 
+      </ion-scroll></br>
+       <div class="row">
+          <div class="col">
+            <div class="list">
+            <div class="item item-divider">
+              <h2 style="color:green">Francais</h2>
+            </div>
+          </div>
+          </div>
+          <div class="col col-50">
+            <div class="list">
+            <div class="item item-divider">
+               <h2 style="color:blue">Kabyle</h2>
+            </div>
+          </div>
+          </div>
         </div>
-       
-      </ion-scroll>
-      <div class="col"></div>
-      <div class="col"></div>
-      <div class="col"></div>
-    </div>   
+        <div class="row" ng-repeat="word in words | filter:q as results">
+          <div class="col">
+            <div class="list">
+            <div class="item item-divider">
+              {{word.Fr}}
+            </div>
+          </div>
+          </div>
+          <div class="col">
+            <div class="list">
+            <div class="item item-divider">
+              {{word.kabyle1}}
+            </div>
+          </div>
+          </div>
+        </div>
   </ion-content>
 </ion-view>
-

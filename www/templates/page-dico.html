@@ -1,0 +1,984 @@
+
+<!--  http://jsfiddle.net/Crw2C/657    
+
+to generate the json 
+ -->
+
+<button id="run" class="btn btn-primary">Convert!</button>
+                     <table id='example-table' class="table table-striped">
+
+                     <thead>
+                        <tr>
+                          <th>Fr</th>
+                          <th>kabyle1</th>
+                          <th >kabyle2</th>
+                          <th >kabyle3</th>
+
+                        </tr>
+                      </thead>
+
+
+                      <table bgcolor="#000000" border="0" cellpadding="2" cellspacing="1" width="100%">
+                    <tbody>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Babouche</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Idukan</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">Ibelghat</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bâcler</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">xermez</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">Serwet</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bagage</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Afecku</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">Ilalen</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bagarre</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Tcaqlala</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">Amcetccew</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">Imerszi</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bagarrer (se)</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Tceqlel</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">Mmersz</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">Mectcaw</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bagatelle</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Aqejqul</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">Tajelbujt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bague</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Taxatemt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Baigner (se)</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Ccef</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">Cucef</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bain</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Acucef</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Baisse</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Asider</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Baisser</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Seneghs</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">Subb</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Baisser (se)</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Knu</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Balade</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Asara</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">Ahewes</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Baladeur (walkman)</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Asefledan</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Balafrer</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Crem</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">xbec</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Balai</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Tasfatt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">Tasemmt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">Tamedwast</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Balance</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Amsewliwel</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Balancer</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Wliwel</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">Lewweh</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Balançoire</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Tajgagalt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">Taja lulaqt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Balayage</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Adhummu</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">Asfadh</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">Tasemmt</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Balayer</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Dhum</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">Sfedh</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">Semm</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Ballet</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Asummur</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Ballon</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Ticcirt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">Takurt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">Ddabex</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bande</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Axawag</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">Tasfift</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">Asru</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bande dessinée</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Asaru yunigh</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Banquet</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Adraw</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Barboter</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Ferkedh</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Barque</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Tireft (tiraf)</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Barrage</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Uggug</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">Tafrawt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Barrière</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Tisseghlit</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">Tasiweght</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bas</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Adda</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bas (en)</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Ddaw</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="25%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Base</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Azadur</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Abudh</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bassin</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Amdun</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Asarigdj</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bât</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Tsberdha</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bataillon</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Agalfu</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bâtard</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Acenti</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Akluc</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bateau</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Agherrabu</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bâtir(eriger)</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Ssali</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Sku</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bâton</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Akuray</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Aaekkwaz</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">Taghluct</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Battre</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Ewwet</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Battre (le beurre)</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Sendu</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bavard</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Stut</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Aceghnan</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bavarder</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Mmeslay</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Qesser</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">Ceghnen</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bave</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Ilezzazen (tslur)</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Ildayen</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Beau</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Ahuskay</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Ighuda</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">Afulki</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Beaucoup</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Attas</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">xilla</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">Hawli</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Beau-frère</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Adheggwal</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Aggaw</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Beauté</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Tahuski</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Aghuda</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">Afulki</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bébé</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Ilufan</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Agrud</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">Taslemya</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bec</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Akenkuub</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Aqamum</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Béer</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Bbehbi</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bégayer</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Sqewqew</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Tewtew</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Beignet</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Idernan (tslur)</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bêler</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Sbaabaa</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Juggu</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bélier</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Ikerri</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Axarfi</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bénédiction</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Talemmiht</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Sser</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bénéfice</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Arraz</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Abaghur</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bénéficier</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Rez (irez-itsruz)</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Berbère</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Amazigh</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Berceau</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Dduh</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Alulu</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bercer</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Zzuzen</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Sharuru</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">Slullu</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Berger</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Ameksa</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Anittci</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bergeronnette</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Tabuzegrayezt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Besoin</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Assar</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Besoin (avoir)</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">User</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bestiole</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Abaauc</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Beurre</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Udi</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Trusi</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bibliographie</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Adlesumugh</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bibliothèque</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Timkardhit</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bidon</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Abelyun</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bienfaisance</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Tullught</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bienvenue</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Ansuf</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bijou</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Asghun</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bilan</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Tamaghant</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bilingue</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Amesnawal</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Binaire</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Imisin</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Binôme</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Asenful</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Biographie</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Tameddurt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Biologie</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Tudersent</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Tudersnawt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Blâme</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Azawar</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Acuced</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Blâmer</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Zawer</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Cuced</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Blanc</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Amellal</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Acebhan</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">Acemrar</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Blé</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Irden</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Blessé</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Amagus (imugas)</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Blessure</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Aggas (aggasen)</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bleu</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Aszerwal</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Azegzaw</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Blocage</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Taqqamt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bluffer</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Kellex</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Ghefs</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bœuf</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Akentuur</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Aaejmi</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">Afunas</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Boire</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Su</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Sew</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bois</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Asghar</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Iqeccadhen</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Boisson</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Timeswit</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Tissi</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Boite</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Tankult</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Boiter</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Suuszel</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Sbidir squddur</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Boiteux</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Arejdal</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Aridhal</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">Aqudar</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bol</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Aqedduh</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bombardement</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Taberrawt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bombarder</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Sbirrew</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bon</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Dhelfen</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Amalagh</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bon (être)</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Yulegh</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Ihu</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">Ilha</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bondir</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Ntteg</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Nttew</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">Ndhew</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bonheur</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Tumert</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bonjour</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Azul</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Ass amggaz</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bonté</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Tamella</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bord</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Ttarf</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Rrif</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">Iri</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Borgne</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Azaawal</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Aferdi n titt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Borne</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Agmir</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Awettu</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bosse</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Taarurt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Tahabbuct</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bossu</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Bu-tayyut</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Bu-taarurt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bouc</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Abuukir</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Amyan</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">Aqelwac</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bouche</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Akemmu</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Aqemmuc</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">Imi</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bouché</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Yergel</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bouchée</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Talqimt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Boucher (n)</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Agher</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Agezzar</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Boucher (v)</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Rgel</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Suddem</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bouchon</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Tadimt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Aghummu</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bouderie</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Tutctcha</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Boue</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Alud</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Tixmirt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bougie</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Tacemmaat</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bouillir</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Rkem</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bouillon</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Imerghan</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Urkim</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Boule</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Takurt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bouleverser</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Serkes</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bourbier</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Ixmir</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bourse</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Taggazt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bouton</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Taqeffalt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Boxe</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Ukkim</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Taleggumt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Boyau</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Adan (idanen)</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Boycotter</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Grefdh</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Braire</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Juu</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">Sgharghar</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">Shundur</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Braise</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="27%">Tirgets</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="20%">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="23%">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Branche</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Tasetta</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Acagw</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Aszel</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Branler</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Mil (immal-itsmal)</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Ngugel</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bras</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Ighil</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Brasier</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Irig</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Irij</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Irgis</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Brave(mas)</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">D argaz</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Amella</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bravoure</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Tirugza</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Brebis</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Tixsi</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Ulli (tsl)</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bricolage</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Adaqar</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Amermed</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bricoler</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Dqar</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Mermed</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bride</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Algamu</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Srima</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Briller</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Reqq</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Crureq</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Briquet</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Infed</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Briser</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Ersz</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Broche</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Abzim</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Afzim</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Brochette</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Tutelt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Tutlin</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Brouillard</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Agu</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Broussaille</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Amadagh</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bru</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Tislit</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bruit</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Szdih</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Adida</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Brûler</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Ergh (ireqq)</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Brut</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Afusszagh</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bûche</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Tifersit</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Budget</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Tighusar</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bulletin</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Tanfult</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Bureau</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Asirra (iserrawen)</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Burnous</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Ahaddam</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Axnif</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Talaba</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>But</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Iswi</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#FFFFFF" valign="top" width="30%"><strong>Butte</strong></td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Tighilt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">Tawrirt</td>
+                        <td height="20" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
+                      </tr>
+                    </tbody>
+                  </table>
