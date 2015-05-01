@@ -114,7 +114,13 @@ table td {
   height: 24px;
   border-width: 1px;
 }
-
+.spinner svg {
+  width: 50% !important;
+  height: 85px !important;
+}
+.SearchFixed{
+  position: fixed;
+}
 
 
 
