@@ -1,63 +1,20 @@
-angular.module('starter.controllers', [])
+//angular.module('starter.controllers', [])
+angular.module( 'starter.controllers', ['ionic'])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
-  // Form data for the login modal
-  $scope.loginData = {};
-
-  // Create the login modal that we will use later
-  $ionicModal.fromTemplateUrl('templates/login.html', {
-    scope: $scope
-  }).then(function(modal) {
-    $scope.modal = modal;
-  });
-
-  // Triggered in the login modal to close it
-  $scope.closeLogin = function() {
-    $scope.modal.hide();
-  };
-
-  // Open the login modal
-  $scope.login = function() {
-    $scope.modal.show();
-  };
-
-  // Perform the login action when the user submits the login form
-  $scope.doLogin = function() {
-    console.log('Doing login', $scope.loginData);
-
-    // Simulate a login delay. Remove this and replace with your login
-    // code if using a login system
-    $timeout(function() {
-      $scope.closeLogin();
-    }, 1000);
-  };
-
-  window.onload = function() { playStream(); };
-    // Code from http://www.joeldare.com/wiki/play_an_mp3_audio_stream_in_phonegap
-    function playStream() {
-      try {
-        var myaudio = new Audio('http://icecast.ksl.com:8000/');
-        myaudio.id = 'playerMyAdio';
-        myaudio.play();
-      } catch (e) {
-        alert('no audio support!');
-      }
-    };
+ 
+// les autres fonctions
 
 })
+
 //// Dictionnaire 
-.controller('DicoCtrl', function($scope, $ionicModal, $timeout,$ionicLoading) {
+
+.controller('DicoCtrl', function($scope) {
   
-  /// alphaber accordion
 $scope.ShowA = function() {
-  $ionicLoading.show({
-    template: 'A<br/><ion-spinner icon="android"/>'
-  });
-  $timeout(function () {
-    $ionicLoading.hide();
+     
     $scope.words = 
-    [
-  {
+    [{
     "Fr":"À (lieu)",
     "Kb":"Di"
   },
@@ -1929,18 +1886,9 @@ $scope.ShowA = function() {
     "Fr":"Axial",
     "Kb":"Aglusan"
   }
-]
-;
-  }, 500);
-  
-  }
+];}
 $scope.ShowB = function() {
-  $ionicLoading.show({
-    template: 'B<br/><ion-spinner icon="android"/>'
-  });
-  $timeout(function () {
-    $ionicLoading.hide();
-
+  
   $scope.words = 
   [
   {
@@ -2584,16 +2532,11 @@ $scope.ShowB = function() {
     "Kb":"Tighilt"
   }
 ]
-;  }, 500);
+;
 }
 
 $scope.ShowC = function() {
-  $ionicLoading.show({
-    template: 'B<br/><ion-spinner icon="android"/>'
-  });
-  $timeout(function () {
-    $ionicLoading.hide();
-
+  
   $scope.words = 
 [
   {
@@ -4644,9 +4587,6 @@ $scope.ShowC = function() {
     "Fr":"Cylindre",
     "Kb":"Awlellu"
   }
-];  }, 500);
-}
-
-
+];}
 });
 

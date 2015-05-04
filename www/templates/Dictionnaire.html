@@ -88,7 +88,9 @@
             Z
           </button> 
       </ion-scroll></br>
-       <div class="row">
+      
+
+          <div class="row">
           <div class="col">
             <div class="list">
             <div class="item item-divider">
@@ -104,21 +106,18 @@
           </div>
           </div>
         </div>
-        <div class="row" ng-repeat="word in words | filter:q as results">
+        <div class="row"  collection-repeat="word in words">
           <div class="col">
-            <div class="list">
-            <div class="item item-divider">
-              {{word.Fr}}
-            </div>
-          </div>
+            <ion-item>
+               {{ word.Fr }}
+            </ion-item>
           </div>
           <div class="col">
-            <div class="list">
-            <div class="item item-divider">
+            <ion-item>
               {{word.Kb}}
-            </div>
-          </div>
+            </ion-item>
           </div>
         </div>
   </ion-content>
-</ion-view>
+
+  </ion-view>
