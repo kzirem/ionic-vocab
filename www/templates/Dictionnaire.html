@@ -1,14 +1,14 @@
 <ion-view view-title="Dictionnaire">
-  <ion-content ng-controller="DicoCtrl">
+  <ion-content ng-controller="DicoCtrl"  >
       <div class="list list-inset">
               <label class="item item-input">
               <i class="icon ion-search placeholder-icon"></i>
-              <input type="text" placeholder="Rechercher" ng-model="q" >
+              <input type="text" placeholder="Rechercher" ng-model="search" >
             </label>
       </div>
       </br>
+      <div class="">
       <ion-scroll  direction="x" class="wide-as-needed" zooming="true">
-      
           <button class="button  button-assertive" ng-click="ShowA()">
             A
           </button>
@@ -18,19 +18,19 @@
            <button class="button  button-assertive" ng-click="ShowC()">
             C
           </button>
-           <button class="button  button-assertive">
+           <button class="button  button-assertive" ng-click="ShowD()">
             D
           </button>
-           <button class="button  button-assertive">
+           <button class="button  button-assertive" ng-click="ShowE()">
             E
           </button>
-           <button class="button  button-assertive">
+           <button class="button  button-assertive" ng-click="ShowF()">
             F
           </button>
-           <button class="button  button-assertive">
+           <button class="button  button-assertive" ng-click="ShowG()">
             G
           </button>
-           <button class="button  button-assertive">
+           <button class="button  button-assertive" ng-click="ShowH()">
             H
           </button>
            <button class="button  button-assertive">
@@ -88,8 +88,7 @@
             Z
           </button> 
       </ion-scroll></br>
-      
-
+      </div>
           <div class="row">
           <div class="col">
             <div class="list">
@@ -106,7 +105,7 @@
           </div>
           </div>
         </div>
-        <div class="row"  collection-repeat="word in words">
+        <div class="row"  collection-repeat="word in words | filter:search">
           <div class="col">
             <ion-item>
                {{ word.Fr }}
@@ -119,5 +118,4 @@
           </div>
         </div>
   </ion-content>
-
   </ion-view>
