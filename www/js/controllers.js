@@ -7,6 +7,48 @@ angular.module( 'starter.controllers', ['ionic'])
 
 })
 
+.controller('AlphaCtrl', function($scope, $ionicModal, $timeout) {
+ 
+$scope.alphabets = 
+    [
+    {
+    "latin":"A",
+    "image":"A",
+    "Prononciation":"Prononciation entre le 'a' et le 'e' français comme 2 'a' qui se suivent",
+    "exemple":"azger (boeuf)"
+
+     },
+     {
+    "latin":"B",
+    "image":"B",
+    "Prononciation":"Se prononce 'b' ou 'v'",
+    "exemple":"bibb (porter sur le dos)"
+     },
+     {
+    "latin":"C",
+    "Prononciation":" Se prononce 'ch'",
+    "exemple":"claḍa (salade)"
+     },
+     {
+    "latin":"č",
+    "image":"C2",
+    "Prononciation":" Se prononce 'tch'",
+    "exemple":"ččar (remplir)"
+     },
+     {
+    "latin":"D",
+    "image":"D",
+    "Prononciation":" Se prononce 'd' ou 'th' comme l'anglais 'this'",
+    "exemple":"dexxan (fumée), dagi (ici)"
+     },
+     
+
+  ];
+})
+
+/////// alphabet 
+
+
 //// Dictionnaire 
 
 .controller('DicoCtrl', function($scope) {
@@ -14,7 +56,8 @@ angular.module( 'starter.controllers', ['ionic'])
 $scope.ShowA = function() {
      
     $scope.words = 
-    [{
+    [
+    {
     "Fr":"À (lieu)",
     "Kb":"Di"
   },
@@ -4588,5 +4631,2512 @@ $scope.ShowC = function() {
     "Kb":"Awlellu"
   }
 ];}
+
+$scope.ShowD = function() {
+  $scope.words = [
+    {
+        "Fr": "Dalle",
+        "Kb": "Tablatt"
+    },
+    {
+        "Fr": "Danger",
+        "Kb": "Amizi"
+    },
+    {
+        "Fr": "Dangereux",
+        "Kb": "Amihaw"
+    },
+    {
+        "Fr": "Danser",
+        "Kb": "Cdhah"
+    },
+    {
+        "Fr": "Date",
+        "Kb": "Azemz"
+    },
+    {
+        "Fr": "Débarrasser",
+        "Kb": "Bellez"
+    },
+    {
+        "Fr": "Débat",
+        "Kb": "Askasi"
+    },
+    {
+        "Fr": "Débattre",
+        "Kb": "Seksi"
+    },
+    {
+        "Fr": "Débilité",
+        "Kb": "Talkalt"
+    },
+    {
+        "Fr": "Débit",
+        "Kb": "Aktum"
+    },
+    {
+        "Fr": "Débiteur",
+        "Kb": "Anektam"
+    },
+    {
+        "Fr": "Déborder",
+        "Kb": "Sefl"
+    },
+    {
+        "Fr": "Déboucher",
+        "Kb": "Anafar (inufar)"
+    },
+    {
+        "Fr": "Décembre",
+        "Kb": "Dujanbir"
+    },
+    {
+        "Fr": "Décevoir",
+        "Kb": "Beytel"
+    },
+    {
+        "Fr": "Décharger",
+        "Kb": "Zugez"
+    },
+    {
+        "Fr": "Déchet",
+        "Kb": "Alammu"
+    },
+    {
+        "Fr": "Déchiffrer",
+        "Kb": "Zmek"
+    },
+    {
+        "Fr": "Déchirer",
+        "Kb": "Cerreg"
+    },
+    {
+        "Fr": "Déchirure",
+        "Kb": "Acerreg"
+    },
+    {
+        "Fr": "Décider",
+        "Kb": "Ghets"
+    },
+    {
+        "Fr": "Décision",
+        "Kb": "Taghtast"
+    },
+    {
+        "Fr": "Déclarer",
+        "Kb": "Berreh"
+    },
+    {
+        "Fr": "Décolorer",
+        "Kb": "Ncel"
+    },
+    {
+        "Fr": "Décor",
+        "Kb": "Adlag"
+    },
+    {
+        "Fr": "Décorateur",
+        "Kb": "Amedlag"
+    },
+    {
+        "Fr": "Décoration (médaille)",
+        "Kb": "Abreqqes"
+    },
+    {
+        "Fr": "Décoration (ornement)",
+        "Kb": "Adlag"
+    },
+    {
+        "Fr": "Décorer",
+        "Kb": "Dleg"
+    },
+    {
+        "Fr": "Décourager",
+        "Kb": "Sefcel"
+    },
+    {
+        "Fr": "Découverte",
+        "Kb": "Tuzuft"
+    },
+    {
+        "Fr": "Découvrir",
+        "Kb": "Zef"
+    },
+    {
+        "Fr": "Décret",
+        "Kb": "Tanatt"
+    },
+    {
+        "Fr": "Décrire",
+        "Kb": "Glem"
+    },
+    {
+        "Fr": "Défaut",
+        "Kb": "Amalad"
+    },
+    {
+        "Fr": "Défendre",
+        "Kb": "Sten"
+    },
+    {
+        "Fr": "Défense",
+        "Kb": "Ahuddu"
+    },
+    {
+        "Fr": "Défi",
+        "Kb": "Acqirrew"
+    },
+    {
+        "Fr": "Déficience",
+        "Kb": "Tiggit"
+    },
+    {
+        "Fr": "Défier",
+        "Kb": "Cqirrew"
+    },
+    {
+        "Fr": "Défilé",
+        "Kb": "Amsudegh"
+    },
+    {
+        "Fr": "Définir",
+        "Kb": "Sbadu"
+    },
+    {
+        "Fr": "Définition",
+        "Kb": "Tabadut"
+    },
+    {
+        "Fr": "Dégager",
+        "Kb": "Eldi"
+    },
+    {
+        "Fr": "Dégoût",
+        "Kb": "Amuklu"
+    },
+    {
+        "Fr": "Dégradation",
+        "Kb": "Alakay"
+    },
+    {
+        "Fr": "Degré",
+        "Kb": "Tafesna"
+    },
+    {
+        "Fr": "Dehors",
+        "Kb": "Berra"
+    },
+    {
+        "Fr": "Délai",
+        "Kb": "Amendhar"
+    },
+    {
+        "Fr": "Délégué",
+        "Kb": "Anesmigel"
+    },
+    {
+        "Fr": "Délinquance",
+        "Kb": "Afuggu"
+    },
+    {
+        "Fr": "Délinquant",
+        "Kb": "Amfaggu"
+    },
+    {
+        "Fr": "Délire",
+        "Kb": "Ahetref"
+    },
+    {
+        "Fr": "Délivrer",
+        "Kb": "Jenjem"
+    },
+    {
+        "Fr": "Déluge",
+        "Kb": "Azillidh"
+    },
+    {
+        "Fr": "Demain",
+        "Kb": "Azekka"
+    },
+    {
+        "Fr": "Demande",
+        "Kb": "Tuttsra"
+    },
+    {
+        "Fr": "Demander",
+        "Kb": "Suter"
+    },
+    {
+        "Fr": "Demeurer",
+        "Kb": "Zdegh"
+    },
+    {
+        "Fr": "Démocrate",
+        "Kb": "Amagdu"
+    },
+    {
+        "Fr": "Démocratie",
+        "Kb": "Tugdut"
+    },
+    {
+        "Fr": "Démocratisation",
+        "Kb": "Asgdud"
+    },
+    {
+        "Fr": "Démolir",
+        "Kb": "Hudd"
+    },
+    {
+        "Fr": "Démon",
+        "Kb": "Ccittan"
+    },
+    {
+        "Fr": "Démonstratif",
+        "Kb": "Ameskan"
+    },
+    {
+        "Fr": "Démonstration",
+        "Kb": "Tamsenszayt"
+    },
+    {
+        "Fr": "Démontrer",
+        "Kb": "Senszi"
+    },
+    {
+        "Fr": "Dénonciateur",
+        "Kb": "Asummal"
+    },
+    {
+        "Fr": "Dense",
+        "Kb": "Anesszaw"
+    },
+    {
+        "Fr": "Densité",
+        "Kb": "Tanesszi"
+    },
+    {
+        "Fr": "Dent",
+        "Kb": "Tughmest"
+    },
+    {
+        "Fr": "Départ",
+        "Kb": "Akunser"
+    },
+    {
+        "Fr": "Département",
+        "Kb": "Agezdir"
+    },
+    {
+        "Fr": "Dépassement",
+        "Kb": "Azerruy"
+    },
+    {
+        "Fr": "Dépendance",
+        "Kb": "Tagelt"
+    },
+    {
+        "Fr": "Dépendre",
+        "Kb": "Ugel"
+    },
+    {
+        "Fr": "Dépit",
+        "Kb": "Tutcha"
+    },
+    {
+        "Fr": "Déplacement",
+        "Kb": "Arigez"
+    },
+    {
+        "Fr": "Déplacer",
+        "Kb": "Rigez"
+    },
+    {
+        "Fr": "Déposer",
+        "Kb": "Sgel"
+    },
+    {
+        "Fr": "Dépôt",
+        "Kb": "Aselghes"
+    },
+    {
+        "Fr": "Dépression",
+        "Kb": "Aberrazu"
+    },
+    {
+        "Fr": "Député",
+        "Kb": "Amazan"
+    },
+    {
+        "Fr": "Déraciné",
+        "Kb": "Amakuf"
+    },
+    {
+        "Fr": "Déraciner",
+        "Kb": "Sskuf"
+    },
+    {
+        "Fr": "Dérivation",
+        "Kb": "Tasuddemt"
+    },
+    {
+        "Fr": "Dérive",
+        "Kb": "Asuddim"
+    },
+    {
+        "Fr": "Dérivée (forme)",
+        "Kb": "Azellum"
+    },
+    {
+        "Fr": "Dériver",
+        "Kb": "Suddem"
+    },
+    {
+        "Fr": "Dernier",
+        "Kb": "Aneggaru"
+    },
+    {
+        "Fr": "Descendre",
+        "Kb": "Subb"
+    },
+    {
+        "Fr": "Descente",
+        "Kb": "Takwessart"
+    },
+    {
+        "Fr": "Description",
+        "Kb": "Aglam"
+    },
+    {
+        "Fr": "Déséquilibre",
+        "Kb": "Annezruy"
+    },
+    {
+        "Fr": "Déséquilibré (être)",
+        "Kb": "Annezri"
+    },
+    {
+        "Fr": "Désert",
+        "Kb": "Aneszruf"
+    },
+    {
+        "Fr": "Déshonorer",
+        "Kb": "Bbehdel"
+    },
+    {
+        "Fr": "Désir",
+        "Kb": "Aseddirem"
+    },
+    {
+        "Fr": "Désordre",
+        "Kb": "Tametruyt"
+    },
+    {
+        "Fr": "Dessin",
+        "Kb": "Tinnight"
+    },
+    {
+        "Fr": "Dessiner",
+        "Kb": "Sunegh"
+    },
+    {
+        "Fr": "Dessous",
+        "Kb": "Ddaw"
+    },
+    {
+        "Fr": "Dessus",
+        "Kb": "Nnig"
+    },
+    {
+        "Fr": "Détacher",
+        "Kb": "Bru"
+    },
+    {
+        "Fr": "Détailler",
+        "Kb": "Sulledh"
+    },
+    {
+        "Fr": "Détendre",
+        "Kb": "Sillew"
+    },
+    {
+        "Fr": "Détenu",
+        "Kb": "Anekruf"
+    },
+    {
+        "Fr": "Détermination",
+        "Kb": "Aguccel"
+    },
+    {
+        "Fr": "Détester",
+        "Kb": "Ksen"
+    },
+    {
+        "Fr": "Détruire",
+        "Kb": "Ssedrem"
+    },
+    {
+        "Fr": "Dette",
+        "Kb": "Amerwas"
+    },
+    {
+        "Fr": "Deuxième",
+        "Kb": "Wissin"
+    },
+    {
+        "Fr": "Devancer",
+        "Kb": "Zwir"
+    },
+    {
+        "Fr": "Devant",
+        "Kb": "Zdat"
+    },
+    {
+        "Fr": "Développement",
+        "Kb": "Taneflit"
+    },
+    {
+        "Fr": "Développer",
+        "Kb": "Ssendel"
+    },
+    {
+        "Fr": "Devenir (n)",
+        "Kb": "Tughult"
+    },
+    {
+        "Fr": "Devenir (v)",
+        "Kb": "Ughal"
+    },
+    {
+        "Fr": "Devin",
+        "Kb": "Ineqqiqi"
+    },
+    {
+        "Fr": "Deviner",
+        "Kb": "Cellek"
+    },
+    {
+        "Fr": "Devoir (n)",
+        "Kb": "Aghan"
+    },
+    {
+        "Fr": "Dévoué",
+        "Kb": "Amidhwel"
+    },
+    {
+        "Fr": "Diagonal",
+        "Kb": "Ubdis"
+    },
+    {
+        "Fr": "Dialectique",
+        "Kb": "Tamestala"
+    },
+    {
+        "Fr": "Dialogue",
+        "Kb": "Adiwenni"
+    },
+    {
+        "Fr": "Dialoguer",
+        "Kb": "Sdiwen"
+    },
+    {
+        "Fr": "Diamètre",
+        "Kb": "Akdu"
+    },
+    {
+        "Fr": "Diaphragme",
+        "Kb": "Ileft"
+    },
+    {
+        "Fr": "Diarrhée",
+        "Kb": "Bezzeeka"
+    },
+    {
+        "Fr": "Dichotomie",
+        "Kb": "Tasnatit"
+    },
+    {
+        "Fr": "Dictateur",
+        "Kb": "Asnaraf"
+    },
+    {
+        "Fr": "Dictée",
+        "Kb": "Tazabut"
+    },
+    {
+        "Fr": "Dicter",
+        "Kb": "Zubet"
+    },
+    {
+        "Fr": "Dictionnaire",
+        "Kb": "Amawal"
+    },
+    {
+        "Fr": "Différence",
+        "Kb": "Tameszla"
+    },
+    {
+        "Fr": "Différencier",
+        "Kb": "Smeszli"
+    },
+    {
+        "Fr": "Différent",
+        "Kb": "Imeszli"
+    },
+    {
+        "Fr": "Différentiel",
+        "Kb": "Aneszlay"
+    },
+    {
+        "Fr": "Différer",
+        "Kb": "Ssemti"
+    },
+    {
+        "Fr": "Difficile",
+        "Kb": "Agermam"
+    },
+    {
+        "Fr": "Difficulté",
+        "Kb": "Tiggermemt"
+    },
+    {
+        "Fr": "Diffuser",
+        "Kb": "Zenzew"
+    },
+    {
+        "Fr": "Dignité",
+        "Kb": "Agemmir"
+    },
+    {
+        "Fr": "Dimanche",
+        "Kb": "Atcer"
+    },
+    {
+        "Fr": "Dimension",
+        "Kb": "Aseggiw"
+    },
+    {
+        "Fr": "Diminuer",
+        "Kb": "Ktem"
+    },
+    {
+        "Fr": "Diminution",
+        "Kb": "Aktam"
+    },
+    {
+        "Fr": "Dîner",
+        "Kb": "Imensi"
+    },
+    {
+        "Fr": "Diplôme",
+        "Kb": "Agerdas"
+    },
+    {
+        "Fr": "Dire",
+        "Kb": "Ini"
+    },
+    {
+        "Fr": "Direct",
+        "Kb": "Usrid"
+    },
+    {
+        "Fr": "Direct (en)",
+        "Kb": "Srid"
+    },
+    {
+        "Fr": "Directeur",
+        "Kb": "Anemhal"
+    },
+    {
+        "Fr": "Direction",
+        "Kb": "Tamehla"
+    },
+    {
+        "Fr": "Direction (sens)",
+        "Kb": "Tanila"
+    },
+    {
+        "Fr": "Diriger",
+        "Kb": "Nil"
+    },
+    {
+        "Fr": "Discipline",
+        "Kb": "Aghyud"
+    },
+    {
+        "Fr": "Discipliné",
+        "Kb": "Amaghyad"
+    },
+    {
+        "Fr": "Discipline (savoir)",
+        "Kb": "Agemmun"
+    },
+    {
+        "Fr": "Discours",
+        "Kb": "Taneqqist"
+    },
+    {
+        "Fr": "Discret",
+        "Kb": "Afrari"
+    },
+    {
+        "Fr": "Discrimination",
+        "Kb": "Asnuhyu"
+    },
+    {
+        "Fr": "Discussion",
+        "Kb": "Amyannan"
+    },
+    {
+        "Fr": "Discuter",
+        "Kb": "Myini"
+    },
+    {
+        "Fr": "Dispenser",
+        "Kb": "Zzemzi"
+    },
+    {
+        "Fr": "Disperser",
+        "Kb": "Sewziwez"
+    },
+    {
+        "Fr": "Dispersion",
+        "Kb": "Awziwez"
+    },
+    {
+        "Fr": "Disponibilité",
+        "Kb": "Tanamalt"
+    },
+    {
+        "Fr": "Disponible",
+        "Kb": "Anamal"
+    },
+    {
+        "Fr": "Dispute",
+        "Kb": "Tcaqlala"
+    },
+    {
+        "Fr": "Disque",
+        "Kb": "Adhebsi"
+    },
+    {
+        "Fr": "Dissertation",
+        "Kb": "Tamestalt"
+    },
+    {
+        "Fr": "Dissimulation",
+        "Kb": "Aserkes"
+    },
+    {
+        "Fr": "Dissolution",
+        "Kb": "Aselyem"
+    },
+    {
+        "Fr": "Dissoudre",
+        "Kb": "Selyem"
+    },
+    {
+        "Fr": "Distance",
+        "Kb": "Asettum"
+    },
+    {
+        "Fr": "Distant",
+        "Kb": "Amestam"
+    },
+    {
+        "Fr": "Distinguer",
+        "Kb": "Zlem"
+    },
+    {
+        "Fr": "Distraction",
+        "Kb": "Tamazlalt"
+    },
+    {
+        "Fr": "Distrait",
+        "Kb": "Amazlal"
+    },
+    {
+        "Fr": "Distribuer",
+        "Kb": "Sedger"
+    },
+    {
+        "Fr": "Distribution",
+        "Kb": "Asedger"
+    },
+    {
+        "Fr": "Divergence",
+        "Kb": "Ankas"
+    },
+    {
+        "Fr": "Divergent",
+        "Kb": "Unkis"
+    },
+    {
+        "Fr": "Diversifier",
+        "Kb": "Sebrer"
+    },
+    {
+        "Fr": "Diversité",
+        "Kb": "Abrar"
+    },
+    {
+        "Fr": "Diviser",
+        "Kb": "Szun"
+    },
+    {
+        "Fr": "Division",
+        "Kb": "Taszunt"
+    },
+    {
+        "Fr": "Divorce",
+        "Kb": "Uluf"
+    },
+    {
+        "Fr": "Doctrine",
+        "Kb": "Asekkud"
+    },
+    {
+        "Fr": "Document",
+        "Kb": "Tateggart"
+    },
+    {
+        "Fr": "Dogmatique",
+        "Kb": "Adaslan"
+    },
+    {
+        "Fr": "Dogmatisme",
+        "Kb": "Adaslaszri"
+    },
+    {
+        "Fr": "Dogme",
+        "Kb": "Adasil"
+    },
+    {
+        "Fr": "Doigt",
+        "Kb": "Adhad"
+    },
+    {
+        "Fr": "Domaine",
+        "Kb": "Taghult"
+    },
+    {
+        "Fr": "Domestiquer",
+        "Kb": "Sgerd"
+    },
+    {
+        "Fr": "Domicile",
+        "Kb": "Azeddugh"
+    },
+    {
+        "Fr": "Domination",
+        "Kb": "Aghmar"
+    },
+    {
+        "Fr": "Dominer",
+        "Kb": "Ghmer"
+    },
+    {
+        "Fr": "Don",
+        "Kb": "Tamecfit"
+    },
+    {
+        "Fr": "Donc",
+        "Kb": "Dagh"
+    },
+    {
+        "Fr": "Donnée",
+        "Kb": "Agwettil"
+    },
+    {
+        "Fr": "Donner",
+        "Kb": "Efk"
+    },
+    {
+        "Fr": "Dormir",
+        "Kb": "Ettes"
+    },
+    {
+        "Fr": "Dossier",
+        "Kb": "Akaram"
+    },
+    {
+        "Fr": "Double",
+        "Kb": "Uslig"
+    },
+    {
+        "Fr": "Douceur",
+        "Kb": "Tadhfi"
+    },
+    {
+        "Fr": "Doué",
+        "Kb": "Afakkas"
+    },
+    {
+        "Fr": "Douleur",
+        "Kb": "Tikma"
+    },
+    {
+        "Fr": "Doute",
+        "Kb": "Asurdu"
+    },
+    {
+        "Fr": "Douter",
+        "Kb": "Sured"
+    },
+    {
+        "Fr": "Doux (adj.)",
+        "Kb": "Adhfi"
+    },
+    {
+        "Fr": "Doux (être)",
+        "Kb": "Imim"
+    },
+    {
+        "Fr": "Doyen",
+        "Kb": "Amghar"
+    },
+    {
+        "Fr": "Drame",
+        "Kb": "Tamuggit"
+    },
+    {
+        "Fr": "Dressage",
+        "Kb": "Asaghad"
+    },
+    {
+        "Fr": "Dresser",
+        "Kb": "Sughed"
+    },
+    {
+        "Fr": "Dribbling",
+        "Kb": "Aghussu"
+    },
+    {
+        "Fr": "Droit",
+        "Kb": "Azref"
+    },
+    {
+        "Fr": "Dur",
+        "Kb": "Aquran"
+    },
+    {
+        "Fr": "Durée",
+        "Kb": "Tanzagt"
+    },
+    {
+        "Fr": "Durer",
+        "Kb": "Nzeg"
+    },
+    {
+        "Fr": "Dureté",
+        "Kb": "Taghert"
+    },
+    {
+        "Fr": "Dynamique",
+        "Kb": "Tilhi"
+    },
+    {
+        "Fr": "Dyslexie",
+        "Kb": "Tarewrawt"
+    }
+];
+
+  }
+$scope.ShowE = function() {
+  $scope.words = [
+    {
+        "Fr": "Eau",
+        "Kb": "Aman"
+    },
+    {
+        "Fr": "Ebauche",
+        "Kb": "Abgez"
+    },
+    {
+        "Fr": "Ebloui (tre)",
+        "Kb": "Klulu"
+    },
+    {
+        "Fr": "Eblouissement",
+        "Kb": "Calwaw"
+    },
+    {
+        "Fr": "Ecale",
+        "Kb": "Iclem"
+    },
+    {
+        "Fr": "Ecart",
+        "Kb": "Ankaz"
+    },
+    {
+        "Fr": "Ecarter",
+        "Kb": "Senkez"
+    },
+    {
+        "Fr": "Echange",
+        "Kb": "Asmeske"
+    },
+    {
+        "Fr": "Echantillon",
+        "Kb": "Talemt"
+    },
+    {
+        "Fr": "Echapper",
+        "Kb": "Fertel"
+    },
+    {
+        "Fr": "Echarde",
+        "Kb": "Aghtir"
+    },
+    {
+        "Fr": "Echec",
+        "Kb": "Abrir"
+    },
+    {
+        "Fr": "Echelle",
+        "Kb": "Taskala"
+    },
+    {
+        "Fr": "Echelon",
+        "Kb": "Tafesna"
+    },
+    {
+        "Fr": "Echo",
+        "Kb": "Anza"
+    },
+    {
+        "Fr": "Echouer",
+        "Kb": "Udh"
+    },
+    {
+        "Fr": "Eclair",
+        "Kb": "Usem"
+    },
+    {
+        "Fr": "Eclairage",
+        "Kb": "Asfaw"
+    },
+    {
+        "Fr": "Eclairer",
+        "Kb": "Sfiw"
+    },
+    {
+        "Fr": "Eclaireur",
+        "Kb": "Afadhadh"
+    },
+    {
+        "Fr": "Eclat dŽbris",
+        "Kb": "Asettigh"
+    },
+    {
+        "Fr": "Eclat lumineux",
+        "Kb": "Ticci"
+    },
+    {
+        "Fr": "Eclat son",
+        "Kb": "Aleffugh"
+    },
+    {
+        "Fr": "Eclatant",
+        "Kb": "Aseflalay"
+    },
+    {
+        "Fr": "Eclater",
+        "Kb": "Nefruzzi"
+    },
+    {
+        "Fr": "Eclipse",
+        "Kb": "Afsax"
+    },
+    {
+        "Fr": "Ecole",
+        "Kb": "Agherbaz"
+    },
+    {
+        "Fr": "Ecolier",
+        "Kb": "Abalmud"
+    },
+    {
+        "Fr": "Ecologie",
+        "Kb": "Tanessawnest"
+    },
+    {
+        "Fr": "Economat",
+        "Kb": "Adamus"
+    },
+    {
+        "Fr": "Econome",
+        "Kb": "Ademmas"
+    },
+    {
+        "Fr": "Economie",
+        "Kb": "Tadamsa"
+    },
+    {
+        "Fr": "Economique",
+        "Kb": "Udmis"
+    },
+    {
+        "Fr": "Economiste",
+        "Kb": "Adamsan"
+    },
+    {
+        "Fr": "Ecorce",
+        "Kb": "Tagbett"
+    },
+    {
+        "Fr": "Ecorcher",
+        "Kb": "Azu"
+    },
+    {
+        "Fr": "EcornŽ",
+        "Kb": "Agenfadh"
+    },
+    {
+        "Fr": "Ecosser",
+        "Kb": "Sefriri"
+    },
+    {
+        "Fr": "Ecoulement",
+        "Kb": "Arag"
+    },
+    {
+        "Fr": "Ecouler",
+        "Kb": "Areg"
+    },
+    {
+        "Fr": "Ecoute",
+        "Kb": "Asmuzget"
+    },
+    {
+        "Fr": "Ecouter",
+        "Kb": "Semhess"
+    },
+    {
+        "Fr": "Ecouteurs",
+        "Kb": "Imsefliden"
+    },
+    {
+        "Fr": "Ecran",
+        "Kb": "Agdil"
+    },
+    {
+        "Fr": "Ecrire",
+        "Kb": "Aru"
+    },
+    {
+        "Fr": "Ecriture",
+        "Kb": "Tira"
+    },
+    {
+        "Fr": "Ecrivain",
+        "Kb": "Amaru"
+    },
+    {
+        "Fr": "Ecueil",
+        "Kb": "Azig (izaggen)"
+    },
+    {
+        "Fr": "Ecume",
+        "Kb": "Arghut"
+    },
+    {
+        "Fr": "Edification",
+        "Kb": "Tameskiwt"
+    },
+    {
+        "Fr": "Edifice",
+        "Kb": "Asuk"
+    },
+    {
+        "Fr": "Edifier",
+        "Kb": "Esk"
+    },
+    {
+        "Fr": "Editeur",
+        "Kb": "Amaszrag"
+    },
+    {
+        "Fr": "Edition",
+        "Kb": "Taszrigt"
+    },
+    {
+        "Fr": "Editorial",
+        "Kb": "Tagejdit"
+    },
+    {
+        "Fr": "Editorialiste",
+        "Kb": "Agejdan"
+    },
+    {
+        "Fr": "Educateur",
+        "Kb": "Asegman"
+    },
+    {
+        "Fr": "Education",
+        "Kb": "Asegmi"
+    },
+    {
+        "Fr": "Eduquer",
+        "Kb": "Ssegmi"
+    },
+    {
+        "Fr": "Effacer",
+        "Kb": "Sfedh"
+    },
+    {
+        "Fr": "Effectif (adj.)",
+        "Kb": "Asemday"
+    },
+    {
+        "Fr": "Effet",
+        "Kb": "Asemdu"
+    },
+    {
+        "Fr": "Effeuiller",
+        "Kb": "Crew"
+    },
+    {
+        "Fr": "Efficace",
+        "Kb": "Amellil"
+    },
+    {
+        "Fr": "EfficacitŽ",
+        "Kb": "Tamellit"
+    },
+    {
+        "Fr": "Effleurer",
+        "Kb": "Celledh"
+    },
+    {
+        "Fr": "Effondrer (sÕ)",
+        "Kb": "Gel"
+    },
+    {
+        "Fr": "Effort",
+        "Kb": "Tamessumant"
+    },
+    {
+        "Fr": "Effrayer",
+        "Kb": "Saggwed"
+    },
+    {
+        "Fr": "Egal",
+        "Kb": "Ugdu"
+    },
+    {
+        "Fr": "Egalisation",
+        "Kb": "Asegdu"
+    },
+    {
+        "Fr": "Egaliser",
+        "Kb": "Segdu"
+    },
+    {
+        "Fr": "EgalitŽ",
+        "Kb": "Tagadda"
+    },
+    {
+        "Fr": "Egocentrisme",
+        "Kb": "Tumasezrit"
+    },
+    {
+        "Fr": "Egoisme",
+        "Kb": "Timirixeft"
+    },
+    {
+        "Fr": "Ego•ste",
+        "Kb": "Imirixf"
+    },
+    {
+        "Fr": "Egorger",
+        "Kb": "Zlu"
+    },
+    {
+        "Fr": "Egout",
+        "Kb": "Tazulixt"
+    },
+    {
+        "Fr": "Elaboration",
+        "Kb": "Asuteb"
+    },
+    {
+        "Fr": "Elaborer",
+        "Kb": "Suteb"
+    },
+    {
+        "Fr": "Elaguer",
+        "Kb": "Zber"
+    },
+    {
+        "Fr": "Elan",
+        "Kb": "Antag"
+    },
+    {
+        "Fr": "Elargir",
+        "Kb": "Sbirew"
+    },
+    {
+        "Fr": "ElasticitŽ",
+        "Kb": "Alwiwedh"
+    },
+    {
+        "Fr": "Elastique",
+        "Kb": "Alwawadh"
+    },
+    {
+        "Fr": "Elastique (tre)",
+        "Kb": "Lwiwedh"
+    },
+    {
+        "Fr": "Electeur",
+        "Kb": "Aferran"
+    },
+    {
+        "Fr": "Election",
+        "Kb": "Tafrant"
+    },
+    {
+        "Fr": "ElectricitŽ",
+        "Kb": "Trisiti"
+    },
+    {
+        "Fr": "ElŽgance",
+        "Kb": "Tasrifa"
+    },
+    {
+        "Fr": "ElŽgant",
+        "Kb": "Asrif"
+    },
+    {
+        "Fr": "ElŽgiaque",
+        "Kb": "Azneffa"
+    },
+    {
+        "Fr": "ElŽgie",
+        "Kb": "Azneffu"
+    },
+    {
+        "Fr": "ElŽment",
+        "Kb": "Aferdis"
+    },
+    {
+        "Fr": "ElŽmentaire",
+        "Kb": "Aferdas"
+    },
+    {
+        "Fr": "Elevage",
+        "Kb": "Takessi"
+    },
+    {
+        "Fr": "ElŽvation",
+        "Kb": "Anaqel"
+    },
+    {
+        "Fr": "Elve",
+        "Kb": "Anelmad"
+    },
+    {
+        "Fr": "Elever",
+        "Kb": "Naqel"
+    },
+    {
+        "Fr": "Elimination",
+        "Kb": "Asfal"
+    },
+    {
+        "Fr": "Eliminer",
+        "Kb": "Asef"
+    },
+    {
+        "Fr": "Elire",
+        "Kb": "Fren"
+    },
+    {
+        "Fr": "Elite",
+        "Kb": "Tufut"
+    },
+    {
+        "Fr": "Elle",
+        "Kb": "Nettsat"
+    },
+    {
+        "Fr": "Elles",
+        "Kb": "Nitenti"
+    },
+    {
+        "Fr": "Ellipse",
+        "Kb": "Taglayt"
+    },
+    {
+        "Fr": "Eloge",
+        "Kb": "Asulgh"
+    },
+    {
+        "Fr": "Eloignement",
+        "Kb": "Agugu"
+    },
+    {
+        "Fr": "Eloquence",
+        "Kb": "Tasraqqayt"
+    },
+    {
+        "Fr": "Eloquent",
+        "Kb": "Asraqqa"
+    },
+    {
+        "Fr": "Elu",
+        "Kb": "Ufrin"
+    },
+    {
+        "Fr": "Emanation",
+        "Kb": "Asadaw"
+    },
+    {
+        "Fr": "Emancipation",
+        "Kb": "Tasderfit"
+    },
+    {
+        "Fr": "Emanciper",
+        "Kb": "Sderfi"
+    },
+    {
+        "Fr": "Emaner",
+        "Kb": "Sdew"
+    },
+    {
+        "Fr": "Embrasser",
+        "Kb": "Ssuden"
+    },
+    {
+        "Fr": "Embuscade",
+        "Kb": "Akmin"
+    },
+    {
+        "Fr": "Emergence",
+        "Kb": "Agwmadh"
+    },
+    {
+        "Fr": "Emetteur",
+        "Kb": "Amesgal"
+    },
+    {
+        "Fr": "Emettre",
+        "Kb": "Sgel"
+    },
+    {
+        "Fr": "Emeute",
+        "Kb": "Taghewwaght"
+    },
+    {
+        "Fr": "Emigration",
+        "Kb": "Innig"
+    },
+    {
+        "Fr": "Emigre",
+        "Kb": "Iminig"
+    },
+    {
+        "Fr": "Emigrer",
+        "Kb": "Inig"
+    },
+    {
+        "Fr": "Emission",
+        "Kb": "Tasglit"
+    },
+    {
+        "Fr": "Emmagasiner",
+        "Kb": "Selghes"
+    },
+    {
+        "Fr": "Emmener",
+        "Kb": "Awi"
+    },
+    {
+        "Fr": "Emotion",
+        "Kb": "Tadhist"
+    },
+    {
+        "Fr": "Empereur",
+        "Kb": "Amenkad"
+    },
+    {
+        "Fr": "Emphase",
+        "Kb": "Ufay"
+    },
+    {
+        "Fr": "Empire",
+        "Kb": "Amenkud"
+    },
+    {
+        "Fr": "Empirique",
+        "Kb": "Asarmi"
+    },
+    {
+        "Fr": "Emploi",
+        "Kb": "Tamrest"
+    },
+    {
+        "Fr": "EmployŽ",
+        "Kb": "Amaris"
+    },
+    {
+        "Fr": "EmployŽ (tre)",
+        "Kb": "Mres"
+    },
+    {
+        "Fr": "Employer",
+        "Kb": "Semres"
+    },
+    {
+        "Fr": "Employeur",
+        "Kb": "Asermas"
+    },
+    {
+        "Fr": "Emprunt",
+        "Kb": "Arettal"
+    },
+    {
+        "Fr": "Emprunteur",
+        "Kb": "Amerdhal"
+    },
+    {
+        "Fr": "Emulation",
+        "Kb": "Amszaszal"
+    },
+    {
+        "Fr": "En gŽnŽral",
+        "Kb": "S umata"
+    },
+    {
+        "Fr": "Encadrement",
+        "Kb": "Asegrer"
+    },
+    {
+        "Fr": "Encadrer",
+        "Kb": "Segrer"
+    },
+    {
+        "Fr": "Enceinte (tre)",
+        "Kb": "S tadist"
+    },
+    {
+        "Fr": "Encens",
+        "Kb": "Idjawi"
+    },
+    {
+        "Fr": "Enchevtrement",
+        "Kb": "Annerbaz"
+    },
+    {
+        "Fr": "Enclos",
+        "Kb": "Zzerb"
+    },
+    {
+        "Fr": "Enclume",
+        "Kb": "Tuggunt"
+    },
+    {
+        "Fr": "Encore",
+        "Kb": "Dagh"
+    },
+    {
+        "Fr": "Encre",
+        "Kb": "Aselmegh"
+    },
+    {
+        "Fr": "Encrier",
+        "Kb": "Takebbatt"
+    },
+    {
+        "Fr": "EncyclopŽdie",
+        "Kb": "Tasanayt"
+    },
+    {
+        "Fr": "EndŽmique",
+        "Kb": "Amughel"
+    },
+    {
+        "Fr": "Enduire",
+        "Kb": "Dhlu"
+    },
+    {
+        "Fr": "Energie",
+        "Kb": "Azuren"
+    },
+    {
+        "Fr": "Enfant",
+        "Kb": "Agrud"
+    },
+    {
+        "Fr": "Enfanter",
+        "Kb": "Arew"
+    },
+    {
+        "Fr": "Enfer",
+        "Kb": "Timess"
+    },
+    {
+        "Fr": "Enfiler",
+        "Kb": "Qqen"
+    },
+    {
+        "Fr": "Enfler",
+        "Kb": "Bzeg"
+    },
+    {
+        "Fr": "Enflure",
+        "Kb": "Acelbudh"
+    },
+    {
+        "Fr": "Enfuir (s Õ)",
+        "Kb": "Rwel"
+    },
+    {
+        "Fr": "Engagement",
+        "Kb": "Akfawel"
+    },
+    {
+        "Fr": "Engager (s Õ)",
+        "Kb": "Kfiwel"
+    },
+    {
+        "Fr": "Engraisser",
+        "Kb": "Aalef"
+    },
+    {
+        "Fr": "Enigme",
+        "Kb": "Tunszart"
+    },
+    {
+        "Fr": "Enjeu",
+        "Kb": "Asurs"
+    },
+    {
+        "Fr": "Ennemi",
+        "Kb": "Acengu"
+    },
+    {
+        "Fr": "Ennui",
+        "Kb": "Taremmight"
+    },
+    {
+        "Fr": "Ennuyer",
+        "Kb": "xiq"
+    },
+    {
+        "Fr": "EnoncŽ",
+        "Kb": "Tinawt"
+    },
+    {
+        "Fr": "Enqute",
+        "Kb": "Tasestant"
+    },
+    {
+        "Fr": "Enquter",
+        "Kb": "Sesten"
+    },
+    {
+        "Fr": "Enquteur",
+        "Kb": "Amestan"
+    },
+    {
+        "Fr": "Enregistrement",
+        "Kb": "Aklas"
+    },
+    {
+        "Fr": "Enregistreur",
+        "Kb": "Kles"
+    },
+    {
+        "Fr": "EnrouŽ (tre)",
+        "Kb": "Ameklas"
+    },
+    {
+        "Fr": "Enroulement",
+        "Kb": "Tunndha"
+    },
+    {
+        "Fr": "Enrouler",
+        "Kb": "Nnedh"
+    },
+    {
+        "Fr": "Enrouler (sÕ)",
+        "Kb": "Zgen"
+    },
+    {
+        "Fr": "Enseignant",
+        "Kb": "Aselmad"
+    },
+    {
+        "Fr": "Enseignement",
+        "Kb": "Aselmed"
+    },
+    {
+        "Fr": "Enseigner",
+        "Kb": "Selmed"
+    },
+    {
+        "Fr": "Ensemble",
+        "Kb": "Tagrumma"
+    },
+    {
+        "Fr": "Ensevelir",
+        "Kb": "Cfen"
+    },
+    {
+        "Fr": "Entasser",
+        "Kb": "Kerker"
+    },
+    {
+        "Fr": "Entente",
+        "Kb": "Amtawa"
+    },
+    {
+        "Fr": "EnterrŽ",
+        "Kb": "Yetswamdhel"
+    },
+    {
+        "Fr": "Enterrement",
+        "Kb": "Tamdhelt"
+    },
+    {
+        "Fr": "Enterrer",
+        "Kb": "Mdhel"
+    },
+    {
+        "Fr": "Enttement",
+        "Kb": "Agharam"
+    },
+    {
+        "Fr": "Entier",
+        "Kb": "Ummid"
+    },
+    {
+        "Fr": "Entracte",
+        "Kb": "Aferdi"
+    },
+    {
+        "Fr": "Entraide",
+        "Kb": "Tamilalt"
+    },
+    {
+        "Fr": "Entraider (sÕ)",
+        "Kb": "Msetlel"
+    },
+    {
+        "Fr": "Entra”nement",
+        "Kb": "Aslughmu"
+    },
+    {
+        "Fr": "Entra”neur",
+        "Kb": "Asleghmay"
+    },
+    {
+        "Fr": "Entrave",
+        "Kb": "Abran"
+    },
+    {
+        "Fr": "Entre",
+        "Kb": "Gar"
+    },
+    {
+        "Fr": "EntrŽe",
+        "Kb": "Aneckum"
+    },
+    {
+        "Fr": "Entreprendre",
+        "Kb": "Rmes"
+    },
+    {
+        "Fr": "Entrepreneur",
+        "Kb": "Aremmas"
+    },
+    {
+        "Fr": "Entreprise",
+        "Kb": "Tarmist"
+    },
+    {
+        "Fr": "Entrer",
+        "Kb": "Kcem"
+    },
+    {
+        "Fr": "Entretien",
+        "Kb": "Adiwenni"
+    },
+    {
+        "Fr": "EnumŽration",
+        "Kb": "Asmiwer"
+    },
+    {
+        "Fr": "EnumŽrer",
+        "Kb": "Smiwer"
+    },
+    {
+        "Fr": "Envahir",
+        "Kb": "Nbez"
+    },
+    {
+        "Fr": "Envahissement",
+        "Kb": "Anbaz"
+    },
+    {
+        "Fr": "Envahisseur",
+        "Kb": "Anebbaz"
+    },
+    {
+        "Fr": "Enveloppe",
+        "Kb": "Alessi"
+    },
+    {
+        "Fr": "Envelopper",
+        "Kb": "Ttsel"
+    },
+    {
+        "Fr": "Envier",
+        "Kb": "Seddern"
+    },
+    {
+        "Fr": "Envies",
+        "Kb": "Tinitin"
+    },
+    {
+        "Fr": "Environ (approx.)",
+        "Kb": "Tasmekta n É."
+    },
+    {
+        "Fr": "Environnement",
+        "Kb": "Tawennatt"
+    },
+    {
+        "Fr": "Environs (nm pl.)",
+        "Kb": "Aszi"
+    },
+    {
+        "Fr": "Envoyer",
+        "Kb": "Ceggaa"
+    },
+    {
+        "Fr": "Epais",
+        "Kb": "Zur"
+    },
+    {
+        "Fr": "Epaisseur",
+        "Kb": "Tuzart"
+    },
+    {
+        "Fr": "Epanouir",
+        "Kb": "Rzuzzegh"
+    },
+    {
+        "Fr": "Epanouissement",
+        "Kb": "Arzuzzegh"
+    },
+    {
+        "Fr": "Epargne",
+        "Kb": "Asegfer"
+    },
+    {
+        "Fr": "Epargner",
+        "Kb": "Segfer"
+    },
+    {
+        "Fr": "Eparpiller",
+        "Kb": "Wzzaa"
+    },
+    {
+        "Fr": "Epaule",
+        "Kb": "Tayets"
+    },
+    {
+        "Fr": "EpŽe",
+        "Kb": "Isekki"
+    },
+    {
+        "Fr": "Epeler",
+        "Kb": "Ennen"
+    },
+    {
+        "Fr": "Epicerie",
+        "Kb": "Tabeqqalt"
+    },
+    {
+        "Fr": "Epicier",
+        "Kb": "Abeqqal"
+    },
+    {
+        "Fr": "Epine",
+        "Kb": "Asennan"
+    },
+    {
+        "Fr": "Epingle",
+        "Kb": "Amessak"
+    },
+    {
+        "Fr": "Episcope",
+        "Kb": "Aserszar"
+    },
+    {
+        "Fr": "Eponge",
+        "Kb": "Tajettutt"
+    },
+    {
+        "Fr": "Epoque",
+        "Kb": "Tallit"
+    },
+    {
+        "Fr": "Epreuve",
+        "Kb": "Tirmit"
+    },
+    {
+        "Fr": "Equateur",
+        "Kb": "Asebges"
+    },
+    {
+        "Fr": "Equation",
+        "Kb": "Tamesmatt"
+    },
+    {
+        "Fr": "Equilibrage",
+        "Kb": "Amnekna"
+    },
+    {
+        "Fr": "Equilibre",
+        "Kb": "Amnekni"
+    },
+    {
+        "Fr": "EquilibrŽ",
+        "Kb": "Imnekni"
+    },
+    {
+        "Fr": "Equilibrer",
+        "Kb": "Mneki"
+    },
+    {
+        "Fr": "Equipe",
+        "Kb": "Taghlamt"
+    },
+    {
+        "Fr": "Equipement",
+        "Kb": "Asgalef"
+    },
+    {
+        "Fr": "Equiper",
+        "Kb": "Sgilef"
+    },
+    {
+        "Fr": "Equipier",
+        "Kb": "Aneghlam"
+    },
+    {
+        "Fr": "Equitation",
+        "Kb": "Tanaka"
+    },
+    {
+        "Fr": "Equivalence",
+        "Kb": "Tagdazelt"
+    },
+    {
+        "Fr": "Equivalent",
+        "Kb": "Agdazal"
+    },
+    {
+        "Fr": "Ere",
+        "Kb": "Tallit"
+    },
+    {
+        "Fr": "Erotisme",
+        "Kb": "Anatas"
+    },
+    {
+        "Fr": "Errer",
+        "Kb": "Menttar"
+    },
+    {
+        "Fr": "Erreur",
+        "Kb": "Taniwit"
+    },
+    {
+        "Fr": "Escadre",
+        "Kb": "Tagaluft"
+    },
+    {
+        "Fr": "Escadrille",
+        "Kb": "Adefrir"
+    },
+    {
+        "Fr": "Escadron",
+        "Kb": "Agaluf"
+    },
+    {
+        "Fr": "Escaliers",
+        "Kb": "Asanen"
+    },
+    {
+        "Fr": "Escargot",
+        "Kb": "Aarus"
+    },
+    {
+        "Fr": "Esclave",
+        "Kb": "Akli"
+    },
+    {
+        "Fr": "Escorte",
+        "Kb": "Tangift"
+    },
+    {
+        "Fr": "Escorter",
+        "Kb": "Ngef"
+    },
+    {
+        "Fr": "Espace",
+        "Kb": "Tallunt"
+    },
+    {
+        "Fr": "Espce",
+        "Kb": "Talmest"
+    },
+    {
+        "Fr": "EspŽrance",
+        "Kb": "Asirem"
+    },
+    {
+        "Fr": "EspŽrer",
+        "Kb": "Ssirem"
+    },
+    {
+        "Fr": "Espion",
+        "Kb": "Aghalli"
+    },
+    {
+        "Fr": "Espoir",
+        "Kb": "Anaruz"
+    },
+    {
+        "Fr": "Esprit",
+        "Kb": "Anelli"
+    },
+    {
+        "Fr": "Esquisse",
+        "Kb": "Abeckil"
+    },
+    {
+        "Fr": "Essai",
+        "Kb": "Aaradh"
+    },
+    {
+        "Fr": "Essayer",
+        "Kb": "Aaredh"
+    },
+    {
+        "Fr": "Essence",
+        "Kb": "Tumast"
+    },
+    {
+        "Fr": "Essoufflement",
+        "Kb": "Buneggaf"
+    },
+    {
+        "Fr": "Essuyer",
+        "Kb": "Sfedh"
+    },
+    {
+        "Fr": "Est",
+        "Kb": "Agmudh"
+    },
+    {
+        "Fr": "Estime",
+        "Kb": "Adakad"
+    },
+    {
+        "Fr": "Estimer",
+        "Kb": "Dked"
+    },
+    {
+        "Fr": "Estomac",
+        "Kb": "Aaebbudh"
+    },
+    {
+        "Fr": "Estrade",
+        "Kb": "Alektu"
+    },
+    {
+        "Fr": "Et",
+        "Kb": "D"
+    },
+    {
+        "Fr": "Etablir",
+        "Kb": "Seghser"
+    },
+    {
+        "Fr": "Etablir (sÕ)",
+        "Kb": "Ghser"
+    },
+    {
+        "Fr": "Etablissement",
+        "Kb": "Aghsu"
+    },
+    {
+        "Fr": "Etage",
+        "Kb": "Annag"
+    },
+    {
+        "Fr": "Etagre",
+        "Kb": "Ayir"
+    },
+    {
+        "Fr": "Etaler",
+        "Kb": "Sefletgh"
+    },
+    {
+        "Fr": "Etalon (bte)",
+        "Kb": "Amal"
+    },
+    {
+        "Fr": "Etalon (mesure)",
+        "Kb": "Tizeght"
+    },
+    {
+        "Fr": "Etang",
+        "Kb": "Tamda"
+    },
+    {
+        "Fr": "Etape",
+        "Kb": "Amecwar"
+    },
+    {
+        "Fr": "Etat",
+        "Kb": "Addad"
+    },
+    {
+        "Fr": "Etat (nation)",
+        "Kb": "Awanek"
+    },
+    {
+        "Fr": "Etc.",
+        "Kb": "Atg (ar tigra)"
+    },
+    {
+        "Fr": "EtŽ",
+        "Kb": "Anebdu"
+    },
+    {
+        "Fr": "Eteindre",
+        "Kb": "Sexsi"
+    },
+    {
+        "Fr": "Etendre",
+        "Kb": "Fser"
+    },
+    {
+        "Fr": "Etendre (sÕ)",
+        "Kb": "Sszel"
+    },
+    {
+        "Fr": "Eternel",
+        "Kb": "Amaghlal"
+    },
+    {
+        "Fr": "EternitŽ",
+        "Kb": "Aghlul"
+    },
+    {
+        "Fr": "Eternuer",
+        "Kb": "Aadhes"
+    },
+    {
+        "Fr": "Ethique",
+        "Kb": "Tihdi"
+    },
+    {
+        "Fr": "Etincelle",
+        "Kb": "Ifettiwej"
+    },
+    {
+        "Fr": "Etoile",
+        "Kb": "Itri"
+    },
+    {
+        "Fr": "Etonnement",
+        "Kb": "Abhadh"
+    },
+    {
+        "Fr": "Etonner",
+        "Kb": "Sebhedh"
+    },
+    {
+        "Fr": "Etonner (sÕ)",
+        "Kb": "Bhedh"
+    },
+    {
+        "Fr": "Etranger",
+        "Kb": "Aberrani"
+    },
+    {
+        "Fr": "Etre",
+        "Kb": "Ili"
+    },
+    {
+        "Fr": "Etre (lÕ)",
+        "Kb": "Tagmest"
+    },
+    {
+        "Fr": "Etude",
+        "Kb": "Tazrawt"
+    },
+    {
+        "Fr": "Etudiant",
+        "Kb": "Anelmad"
+    },
+    {
+        "Fr": "Etudier",
+        "Kb": "Zrew"
+    },
+    {
+        "Fr": "Evader (sÕ)",
+        "Kb": "Rwel"
+    },
+    {
+        "Fr": "Evaluation",
+        "Kb": "Tamaduzt"
+    },
+    {
+        "Fr": "Evaluer",
+        "Kb": "Udez"
+    },
+    {
+        "Fr": "Evasion",
+        "Kb": "Tarewla"
+    },
+    {
+        "Fr": "Eveil",
+        "Kb": "Tanekra"
+    },
+    {
+        "Fr": "Eveiller",
+        "Kb": "Ssakwi"
+    },
+    {
+        "Fr": "Evnement",
+        "Kb": "Tadyant"
+    },
+    {
+        "Fr": "Eventer",
+        "Kb": "Sbuhru"
+    },
+    {
+        "Fr": "Evidence",
+        "Kb": "Tammunt"
+    },
+    {
+        "Fr": "Evident",
+        "Kb": "Amunu"
+    },
+    {
+        "Fr": "Eviter",
+        "Kb": "Sunef"
+    },
+    {
+        "Fr": "Evocation",
+        "Kb": "Abdar"
+    },
+    {
+        "Fr": "Evoluer",
+        "Kb": "Mhez"
+    },
+    {
+        "Fr": "Evolution",
+        "Kb": "Tamhazt"
+    },
+    {
+        "Fr": "Evoquer",
+        "Kb": "Bdar"
+    },
+    {
+        "Fr": "Exact",
+        "Kb": "Nnit"
+    },
+    {
+        "Fr": "Exactitude",
+        "Kb": "Anefren"
+    },
+    {
+        "Fr": "ExagŽration",
+        "Kb": "Tamayumt"
+    },
+    {
+        "Fr": "ExagŽrer",
+        "Kb": "Ayem"
+    },
+    {
+        "Fr": "Examen",
+        "Kb": "Akayad"
+    },
+    {
+        "Fr": "Examinateur",
+        "Kb": "Amakyad"
+    },
+    {
+        "Fr": "Examiner",
+        "Kb": "Sekyed"
+    },
+    {
+        "Fr": "ExcŽdent",
+        "Kb": "Acayadh"
+    },
+    {
+        "Fr": "ExceptŽ",
+        "Kb": "Slid"
+    },
+    {
+        "Fr": "Excepter",
+        "Kb": "Slid"
+    },
+    {
+        "Fr": "Exception",
+        "Kb": "Tasureft"
+    },
+    {
+        "Fr": "Excs",
+        "Kb": "Azerray"
+    },
+    {
+        "Fr": "Excitation",
+        "Kb": "Asduy"
+    },
+    {
+        "Fr": "Excursion",
+        "Kb": "Amurri"
+    },
+    {
+        "Fr": "Excuse",
+        "Kb": "Asnuruf"
+    },
+    {
+        "Fr": "Excuser",
+        "Kb": "Suref"
+    },
+    {
+        "Fr": "ExŽcuter",
+        "Kb": "Selkem"
+    },
+    {
+        "Fr": "ExŽcution",
+        "Kb": "Aselkem"
+    },
+    {
+        "Fr": "Exemple",
+        "Kb": "Amedya"
+    },
+    {
+        "Fr": "Exempter",
+        "Kb": "Slid"
+    },
+    {
+        "Fr": "Exercer (sÕ)",
+        "Kb": "Lghem"
+    },
+    {
+        "Fr": "Exercice",
+        "Kb": "Alaghmu"
+    },
+    {
+        "Fr": "Exhaustif",
+        "Kb": "Anguz"
+    },
+    {
+        "Fr": "Exil",
+        "Kb": "Azwayeg"
+    },
+    {
+        "Fr": "Exiler",
+        "Kb": "Zewweg"
+    },
+    {
+        "Fr": "Existence",
+        "Kb": "Tilawt"
+    },
+    {
+        "Fr": "Existentiel",
+        "Kb": "Amilaw"
+    },
+    {
+        "Fr": "ExpŽrience",
+        "Kb": "Tarmit"
+    },
+    {
+        "Fr": "Expert",
+        "Kb": "Amuzay"
+    },
+    {
+        "Fr": "Explicite",
+        "Kb": "Aflalay"
+    },
+    {
+        "Fr": "Expliquer",
+        "Kb": "Zzegzi"
+    },
+    {
+        "Fr": "Exploit",
+        "Kb": "Tanfust"
+    },
+    {
+        "Fr": "Exploitation",
+        "Kb": "Ammud"
+    },
+    {
+        "Fr": "Exploiter",
+        "Kb": "Amed"
+    },
+    {
+        "Fr": "Exploiteur",
+        "Kb": "Anammud"
+    },
+    {
+        "Fr": "Exploration",
+        "Kb": "Asnirem"
+    },
+    {
+        "Fr": "Explorer",
+        "Kb": "Snirem"
+    },
+    {
+        "Fr": "Explosif",
+        "Kb": "Afexsay"
+    },
+    {
+        "Fr": "Exportation",
+        "Kb": "Asifedh"
+    },
+    {
+        "Fr": "ExposŽ",
+        "Kb": "Aneskin"
+    },
+    {
+        "Fr": "Exposer",
+        "Kb": "Fser"
+    },
+    {
+        "Fr": "Exposition",
+        "Kb": "Tafsirt"
+    },
+    {
+        "Fr": "Expression",
+        "Kb": "Tanfalit"
+    },
+    {
+        "Fr": "Exprimer",
+        "Kb": "Senfali"
+    },
+    {
+        "Fr": "Extension",
+        "Kb": "Taseggiwit"
+    },
+    {
+        "Fr": "ExtŽrieur",
+        "Kb": "Berra"
+    },
+    {
+        "Fr": "Externe",
+        "Kb": "Amniri"
+    },
+    {
+        "Fr": "Extinction",
+        "Kb": "Alubbed"
+    },
+    {
+        "Fr": "Extraction",
+        "Kb": "Tussfa"
+    },
+    {
+        "Fr": "Extraire",
+        "Kb": "Ssef"
+    },
+    {
+        "Fr": "Extrait",
+        "Kb": "Tassuft"
+    },
+    {
+        "Fr": "Extrapolation",
+        "Kb": "Asmedhren"
+    },
+    {
+        "Fr": "Extrapoler",
+        "Kb": "Smedhren"
+    },
+    {
+        "Fr": "Extrme",
+        "Kb": "Asbbagh"
+    },
+    {
+        "Fr": "ExtrŽmitŽ",
+        "Kb": "Tabbaght"
+    }
+]
+  ;
+
+  }
+$scope.ShowF = function() {
+
+  }
+$scope.ShowG = function() {
+
+  }
+$scope.ShowH = function() {
+
+  }
+$scope.ShowI = function() {
+
+  }  
+$scope.ShowJ = function() {
+
+  } 
+$scope.ShowK = function() {
+
+  } 
+$scope.ShowL = function() {
+
+  }
+$scope.ShowM = function() {
+
+  }
+$scope.ShowN = function() {
+
+  }
+$scope.ShowO = function() {
+
+  }
+$scope.ShowP = function() {
+
+  }
+$scope.ShowQ = function() {
+
+  }  
+$scope.ShowR = function() {
+
+  } 
+$scope.ShowS = function() {
+
+  } 
+$scope.ShowT = function() {
+
+  } 
+$scope.ShowU = function() {
+
+  }  
+$scope.ShowV = function() {
+
+  }
+$scope.ShowW = function() {
+
+  }  
+$scope.ShowX = function() {
+
+  } 
+$scope.ShowY = function() {
+
+  } 
+$scope.ShowZ = function() {
+
+  }                                     
 });
 

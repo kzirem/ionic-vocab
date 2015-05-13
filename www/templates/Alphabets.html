@@ -1,145 +1,57 @@
+<ion-view view-title="Alphabets" ng-controller="AlphaCtrl">
+<ion-content>
 
-<ion-view view-title="Alphabetsḥ">
-  <ion-content>
-<table style="margin-left:5%;"   width="93%"  >
-		<tbody>
-		<tr>
-		<td width="30%" class="name2" >Lettre</td>
-		<td width="60%"  class="name3">Prononciation</td>
-		</tr>
-		<tr>
-		<td>A</td>
-		<td><i>a</i> comme dans l'anglais b<b>a</b>d</td>
-		</tr>
-		<tr>
-		<td>B</td>
-		<td>b/p/v</td>
-		</tr>
-		<tr>
-		<td>C</td>
-		<td>ch</td>
-		</tr>
-		<tr>
-		<td>D</td>
-		<td><i>d</i> / <i>j zozoté</i></td>
-		</tr>
-		<tr>
-		<td>E</td>
-		<td>c'est un <i>a</i> court comme dans l'allemand m<b>a</b>chen</td>
-		</tr>
-		<tr>
-		<td>F</td>
-		<td>f</td>
-		</tr>
-		<tr>
-		<td>G</td>
-		<td>gu</td>
-		</tr>
-		<tr>
-		<td>H</a></td>
-		<td><i>h</i> comme dans l'anglais <b>h</b>ello</td>
-		</tr>
-		<tr>
-		<td>I</td>
-		<td>i</td>
-		</tr>
-		<tr>
-		<td>J</td>
-		<td>j</td>
-		</tr>
-		<tr>
-		<td>K</a></td>
-		<td>k</td>
-		</tr>
-		<tr>
-		<td>L</a></td>
-		<td>l</td>
-		</tr>
-		<tr>
-		<td>M</a></td>
-		<td>m</td>
-		</tr>
-		<tr>
-		<td>N</a></td>
-		<td>n</td>
-		</tr>
-		<tr>
-		<td>Q</a></td>
-		<td></td>
-		</tr>
-		<tr>
-		<td>R</a></td>
-		<td><i>r</i> roulé</td>
-		</tr>
-		<tr>
-		<td>S</a></td>
-		<td>s</td>
-		</tr>
-		<tr>
-		<td>T</a></td>
-		<td><i>t</i> / <i>s</i> zozoté</td>
-		</tr>
-		<tr>
-		<td>U</a></td>
-		<td>ou</td>
-		</tr>
-		<tr>
-		<td>W</a></td>
-		<td>w</td>
-		</tr>
-		<tr>
-		<td>X</td>
-		<td>comme le <i>kh</i> sémite, la jota espagnole ou le <i>ch</i> comme dans l'allemand ma<b>ch</b>en)</td>
-		</tr>
-		<tr>
-		<td>Y</a></td>
-		<td>y</td>
-		</tr>
-		<tr>
-		<td>Z</td>
-		<td>z</td>
-		<tr>
-			<td>č</td>
-			<td>tch</td>
-		</tr>
-		<tr>
-			<td> Ḍ</td>
-			<td><i>d</i></td>
-		</tr>
-		<tr>
-		<td>ǧ</td>
-		<td>dj</td>
-		</tr>
-		<tr>
-		<td>ḥ</td>
-		<td>comme dans l'arabe Mu<b>ḥ</b>ammed</td>
-		</tr>
-		<tr>
-		<td>J</td>
-		<td><i>j</i>comme dans irkan Janin (mauvaise odeur)</td>
-		</tr>
-		<tr><td>ṣ</td>
-		<td><i>s</i> </td>
-		</tr>
-		<tr>
-		<td>ṭ</td>
-		<td><i>t</i> </td>
-		</tr>
-		<tr>
-		<td>ẓ</td>
-		<td><i>z</i> </td>
-		</tr>
-		<tr>
-		<td>ɛ</td>
-		<td>ع <i>ayn</i> arabe</td>
-		</tr>
-		<tr>
-		<td>γ</td>
-		<td><i>r</i> parisien</td>
-		</tr>
-		</tr>
-	</tbody>
-	</table>	
-
+<div class="row">
+          <div class="col">
+            <div class="list">
+            <div class="item item-divider">
+              <h2 style="color:green">Latin</h2>
+            </div>
+          </div>
+          </div>
+          <div class="col">
+            <div class="list">
+            <div class="item item-divider">
+               <h2 style="color:blue">Tifinagh</h2>
+            </div>
+          </div>
+          </div>
+          <div class="col">
+            <div class="list">
+            <div class="item item-divider">
+               <h2 style="color:#A0522D">Prononciation</h2>
+            </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="list">
+            <div class="item item-divider">
+               <h2 style="color:#8B008B">Exemple</h2>
+            </div>
+          </div>
+          </div>
+</div>
+<div class="row"  collection-repeat="lettre in alphabets | filter:search">
+          <div class="col">
+            <ion-item>
+               {{lettre.latin}}
+            </ion-item>
+          </div>
+          <div class="col">
+            <ion-item>
+              <img src="images/{{lettre.image}}.png" style="height:15px">
+            </ion-item>
+          </div>
+          <div class="col">
+            <ion-item>
+               {{lettre.Prononciation}}
+            </ion-item>
+          </div>
+          <div class="col">
+            <ion-item>
+              {{lettre.exemple}}
+            </ion-item>
+          </div>
+</div>
  </ion-content>
 </ion-view>
