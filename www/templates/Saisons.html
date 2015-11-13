@@ -5,12 +5,13 @@
 	  <div class="col">
 	  	<div  ng-init="jours =
                       [
-                        { namekabyle: 'Ccetwa', namefrancais: 'Hiver',nameanglais: 'Winter'},
-                        { namekabyle: 'Tafsut, eṛṛbiε', namefrancais: 'Printemps' ,nameanglais: 'Spring'},
-                        { namekabyle: 'Anebdu, ṣṣif ', namefrancais: 'Été',nameanglais: 'Autumn , Fall' },
-                        { namekabyle: 'Lexṛif', namefrancais: 'Automne',nameanglais: 'Summer' }
+                        { namekabyle: 'Ccetwa', namefrancais: 'Hiver',nameanglais: 'Winter', image:'Hiver'},
+                        { namekabyle: 'Tafsut, eṛṛbiε', namefrancais: 'Printemps' ,nameanglais: 'Spring', image:'Printemps'},
+                        { namekabyle: 'Anebdu, ṣṣif ', namefrancais: 'Été',nameanglais: 'Summer', image:'Ete' },
+                        { namekabyle: 'Lexṛif', namefrancais: 'Automne',nameanglais: 'Autumn , Fall',image:'Automne' }
                       ]"> 
-            <div class="item" ng-repeat="jour in jours | filter:q as results">
+            <div class="item item-thumbnail-left" ng-repeat="jour in jours | filter:q as results">
+                <img src="images/{{jour.image}}.png" class="thumbnail">
                   <div class="name">
                      {{jour.namekabyle}}
                   </div></br>              
